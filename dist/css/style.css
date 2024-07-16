@@ -340,12 +340,121 @@ Start header
 End header
 ##########*/
 
+
+/*
+Start catalog
+#############*/
+.mySwiperContent {
+  justify-content: space-between;
+}
+
+.autoplay-progress {
+  width: 40px;
+  height: 40px;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.mySwiper {
+  height: 700px;
+}
+
+.mySwiperContentLeft {
+  max-width: 50%;
+  width: 100%;
+  height: 694px;
+  background: rgba(135, 24, 90) url("../images/bg4.svg ") no-repeat left top;
+}
+
+.mySwiperContentRight {
+  max-width: 50%;
+  width: 100%;
+}
+
+.mySwiperContentLeft__content {
+  max-width: 450px;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 18%;
+}
+
+.mySwiperContentRight source,
+.mySwiperContentRight img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiperContentLeft__title {
+  color: #F3F3F3;
+  font: normal 500 38px 'Montserrat', sans-serif;
+  line-height: 48px;
+}
+
+.mySwiperContentLeft__btn {
+  max-width: 150px;
+  width: 100%;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #4E3639;
+  font: normal 600 13px 'Montserrat', sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.mySwiperContentLeft__btn:before {
+  content: "";
+  display: block;
+  background: url('../images/icon7.svg') no-repeat center;
+  width: 35px;
+  height: 35px;
+}
+
+/*
+End catalog
+###########*/
+
 /*
 Start description
 ################*/
 .description {
   background: #87185A url("../images/bg2.svg") no-repeat top left;
   height: 610px;
+  position: relative;
+  margin-top: 300px;
 }
 
 .descriptionIn {
@@ -388,7 +497,7 @@ Start description
   width: 491px;
   height: 492px;
   position: absolute;
-  bottom: 120px;
+  top: 120px;
   right: 2%;
 }
 
@@ -403,6 +512,7 @@ Start cooperation
 .cooperation {
   background: #FAECDC;
   height: 670px;
+  margin-top: 200px;
 }
 
 .cooperationIn {
@@ -420,6 +530,12 @@ Start cooperation
 .cooperationIn picture img {
   border-radius: 20px;
 }
+
+.slider-container {
+  position: relative;
+}
+
+
 /*
 End cooperation
 ###############*/
@@ -836,6 +952,7 @@ Start weForm
 .weFormLeftInRight {
   max-width: 670px;
   width: 100%;
+  margin-top: 55px;
 }
 
 .weFormLeftInRightSection {
@@ -853,7 +970,7 @@ Start weForm
   font: normal normal 14px 'Montserrat', sans-serif;
   margin-left: 25px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .weFormLeftInRightSection__input input {
@@ -889,6 +1006,57 @@ Start weForm
   max-width: 100%;
 }
 
+.weFormLeftInRightSectionBottom {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weFormLeftInRightSectionBottom__btn {
+  width: 165px;
+  height: 45px;
+  border-radius: 30px;
+  background: #A82785;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font: normal 600 13px 'Montserrat', sans-serif;
+  padding-right: 20px;
+}
+
+.weFormLeftInRightSectionBottom__btn:before {
+  content: "";
+  background: url(../images/icon4.svg) no-repeat center;
+  width: 34px;
+  height: 34px;
+  margin-left: 7px;
+}
+
+.weFormLeftInRightSectionBottom__doc {
+  color: rgba(78, 54, 57, 1);
+  font: normal 500 14px 'Montserrat', sans-serif;
+  max-width: 410px;
+  width: 100%;
+}
+
+.weFormLeftInRightSectionBottom__doc a {
+  color: rgba(78, 54, 57, 1);
+  font: normal 400 13px 'Montserrat', sans-serif;
+  border-bottom: 1px solid rgba(78, 54, 57, 1);
+}
+
+.weFormLeftInRightSectionBottom__line {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.weFormLeftInRightSectionBottom__warning {
+  color: rgba(78, 54, 57, 1);
+  font: normal 500 14px 'Montserrat', sans-serif;
+}
 /*
 End weForm
 ##########*/

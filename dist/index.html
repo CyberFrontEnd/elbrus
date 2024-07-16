@@ -10,6 +10,8 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/slick.css" rel="stylesheet">
   <link href="css/tel.css" rel="stylesheet">
+  <link href="css/swiper.css" rel="stylesheet">
+
 
   <title> Главная </title>
 </head>
@@ -107,6 +109,79 @@
 </header>
 <!--End header-->
 
+<!--Start catalog-->
+<section class="catalog">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="flex mySwiperContent">
+          <div class="mySwiperContentLeft">
+            <div class="mySwiperContentLeft__content">
+              <h3 class="mySwiperContentLeft__title">Мы создаем продукцию самого высокого качества</h3>
+              <a href="#" class="mySwiperContentLeft__btn flex">в каталог</a>
+            </div>
+          </div>
+
+          <a href="#" class="mySwiperContentRight">
+            <picture>
+              <source srcset="images/sliderBanner.avif">
+              <img src="images/sliderBanner.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="flex mySwiperContent">
+          <div class="mySwiperContentLeft">
+            <div class="mySwiperContentLeft__content">
+              <h3 class="mySwiperContentLeft__title">Мы создаем продукцию самого высокого качества</h3>
+              <a href="#" class="mySwiperContentLeft__btn flex">в каталог</a>
+            </div>
+          </div>
+
+          <a href="#" class="mySwiperContentRight">
+            <picture>
+              <source srcset="images/sliderBanner.avif">
+              <img src="images/sliderBanner.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="flex mySwiperContent">
+          <div class="mySwiperContentLeft">
+            <div class="mySwiperContentLeft__content">
+              <h3 class="mySwiperContentLeft__title">Мы создаем продукцию самого высокого качества</h3>
+              <a href="#" class="mySwiperContentLeft__btn flex">в каталог</a>
+            </div>
+          </div>
+
+          <a href="#" class="mySwiperContentRight">
+            <picture>
+              <source srcset="images/sliderBanner.avif">
+              <img src="images/sliderBanner.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+
+</section>
+<!--End catalog-->
+
 <!--Start description-->
 <div class="description">
   <div class="descriptionIn">
@@ -118,45 +193,6 @@
   </div>
 </div>
 <!--End description-->
-
-<!--Start cooperation-->
-<section class="cooperation">
-  <div class="cooperationIn flex">
-    <picture>
-       <source srcset="images/img.avif">
-       <img src="images/img.jpg" alt="" loading="lazy">
-    </picture>
-
-    <div class="cooperationContent flex">
-      <div class="cooperationLeft">
-        <h2 class="cooperationLeft__title">Сотрудничество</h2>
-        <p class="cooperationLeft__paragraf">Мы сотрудничаем со многими магазинами, кондитерскими и кафе</p>
-        <p class="cooperationLeft__paragraf2">Lorem ipsum dolor sit amet consectetur. Iaculis tellus ornare ridiculus mattis nunc congue integer est ultrices. Feugiat morbi sapien
-          sit posuere id at. Quis consequat dui tellus sapien turpis. Hendrerit ac tellus pellentesque egestas aliquet id aliquet nisl tristique.</p>
-
-        <a href="#" class="cooperation__btn flex">стать партнёром</a>
-      </div>
-
-      <ul class="cooperationRight">
-        <li>
-          <span>Ритейл</span>
-          <span>13</span>
-        </li>
-
-        <li>
-          <span>Кафе</span>
-          <span>38</span>
-        </li>
-
-        <li>
-          <span>Кондитерские</span>
-          <span>22</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-<!--End cooperation-->
 
 <!--Start news-->
 <section class="news">
@@ -340,28 +376,44 @@
 </section>
 <!--End news-->
 
-<!--Start conditer-->
-<section class="conditer">
-  <h2 class="conditer__title">Эльбрус – номер один в производстве кондитерских изделий</h2>
+<!--Start cooperation-->
+<section class="cooperation">
+  <div class="cooperationIn flex">
+    <picture>
+      <source srcset="images/img.avif">
+      <img src="images/img.jpg" alt="" loading="lazy">
+    </picture>
 
-  <ul class="conditerList flex">
-    <li>
-      <div class="conditerList__name">Высокое качество продукции</div>
-      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
-    </li>
+    <div class="cooperationContent flex">
+      <div class="cooperationLeft">
+        <h2 class="cooperationLeft__title">Сотрудничество</h2>
+        <p class="cooperationLeft__paragraf">Мы сотрудничаем со многими магазинами, кондитерскими и кафе</p>
+        <p class="cooperationLeft__paragraf2">Lorem ipsum dolor sit amet consectetur. Iaculis tellus ornare ridiculus mattis nunc congue integer est ultrices. Feugiat morbi sapien
+          sit posuere id at. Quis consequat dui tellus sapien turpis. Hendrerit ac tellus pellentesque egestas aliquet id aliquet nisl tristique.</p>
 
-    <li>
-      <div class="conditerList__name">Натуральные ингредиенты</div>
-      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
-    </li>
+        <a href="#" class="cooperation__btn flex">стать партнёром</a>
+      </div>
 
-    <li>
-      <div class="conditerList__name">Широкий ассортимент</div>
-      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
-    </li>
-  </ul>
+      <ul class="cooperationRight">
+        <li>
+          <span>Ритейл</span>
+          <span>13</span>
+        </li>
+
+        <li>
+          <span>Кафе</span>
+          <span>38</span>
+        </li>
+
+        <li>
+          <span>Кондитерские</span>
+          <span>22</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
-<!--End conditer-->
+<!--End cooperation-->
 
 <!--Start weForm-->
 <section class="weForm flex">
@@ -398,8 +450,6 @@
           </div>
         </div>
 
-
-
         <div class="weFormLeftInRightSection flex">
           <div class="weFormLeftInRightSection__input">
             <label for="phone">Ваш телефон*</label>
@@ -412,14 +462,22 @@
           </div>
         </div>
 
-
-
         <div class="weFormLeftInRightSection flex">
           <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
             <label for="massege">Ваше сообщение</label>
             <input placeholder="Текст" required type="text" id="massege">
           </div>
         </div>
+
+        <div class="weFormLeftInRightSectionBottom flex">
+          <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+
+          <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
+        </div>
+
+        <hr class="weFormLeftInRightSectionBottom__line">
+
+        <div class="weFormLeftInRightSectionBottom__warning">* - обязательные для заполнения поля</div>
       </form>
     </div>
   </div>
@@ -432,6 +490,29 @@
   </div>
 </section>
 <!--End weForm-->
+
+<!--Start conditer-->
+<section class="conditer">
+  <h2 class="conditer__title">Эльбрус – номер один в производстве кондитерских изделий</h2>
+
+  <ul class="conditerList flex">
+    <li>
+      <div class="conditerList__name">Высокое качество продукции</div>
+      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
+    </li>
+
+    <li>
+      <div class="conditerList__name">Натуральные ингредиенты</div>
+      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
+    </li>
+
+    <li>
+      <div class="conditerList__name">Широкий ассортимент</div>
+      <p>Lorem ipsum consectetur. Mi mattis ac amet at egestas tincidunt odio. Eget nisi amet tellus vel nulla.</p>
+    </li>
+  </ul>
+</section>
+<!--End conditer-->
 
 <!--Start footer-->
 <footer class="footer">
@@ -612,10 +693,13 @@
 </footer>
 <!--End footer-->
 
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/migrate.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/tel.js"></script>
+<script src="js/swipe.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
