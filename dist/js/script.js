@@ -6,19 +6,19 @@ $(document).ready(function () {
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1224,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 670,
+        breakpoint: 870,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       },
       {
@@ -103,5 +103,17 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
     },
+  });
+
+  // Start mobil menu btn
+  $('.mobilBtn').on('click', function () {
+    $(this).toggleClass("active");
+    $('.mobilMenu').slideToggle();
+  });
+
+  $('.mobilMenuListIn > a').on('click', function (event) {
+    event.preventDefault();
+    $('.mobilMenuListInSub').slideToggle();
+    $(this).toggleClass('active');
   });
 });
