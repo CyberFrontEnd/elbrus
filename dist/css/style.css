@@ -1975,6 +1975,99 @@ Start brends
 End brends 
 ##########*/
 
+
+/*
+Start politic
+#############*/
+.politic {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto 100px;
+  justify-content: flex-end;
+}
+
+.politicIn {
+  max-width: 940px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.politic__title {
+  color: #4E3639;
+  font: normal 500 38px 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+.politic__title:before {
+  content: "";
+  background: url('../images/icon2.svg') no-repeat top center;
+  width: 40px;
+  height: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.politicSection {
+  margin-top: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.politicSection__paragraf {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.politicSection__title {
+  color: #4E3639;
+  font: normal 500 26px 'Montserrat', sans-serif;
+}
+
+.politicSectionList {
+  margin-top: 40px;
+}
+
+.politicSectionList li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.politicSectionList li span {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  width: 30px;
+}
+
+.politicSectionList li .politicSectionList__text {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  line-height: 24px;
+  width: 96%;
+}
+
+.politicSectionList li .politicSectionList__text .politicSectionList__in {
+  color: #A82783;
+  font: normal 600 16px 'Montserrat', sans-serif;
+}
+
+/*
+End politic
+###########*/
+
 /*
 Start responsive
 ################*/
@@ -2265,6 +2358,10 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .politicIn {
+    margin: 0 auto;
+  }
+
   .weFormLeft__title {
     font-size: 28px;
   }
@@ -2443,6 +2540,11 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .politicIn {
+    max-width: 90%;
+    width: 100%;
+  }
+
   .conditer__title {
     font-size: 28px;
   }
@@ -2727,6 +2829,18 @@ Start responsive
 }
 
 @media (max-width: 750px) {
+  .politic__title {
+    font-size: 32px;
+  }
+
+  .politicSection__title {
+    font-size: 23px;
+  }
+
+  .politicSectionList li .politicSectionList__text {
+    width: 94%;
+  }
+
   .multiple-items2 {
     left: -197px;
     margin-top: 0 !important;
@@ -2899,6 +3013,18 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .politic__title {
+    font-size: 26px;
+  }
+
+  .politicSection__title {
+    font-size: 20px;
+  }
+
+  .politicSectionList li .politicSectionList__text {
+    max-width: 90%;
+  }
+
   .weFormLeft__title {
     font-size: 23px;
   }
@@ -3192,6 +3318,10 @@ Start responsive
 }
 
 @media (max-width: 400px) {
+  .politicSectionList li .politicSectionList__text {
+    max-width: 87%;
+  }
+
   .multiple-items2 {
     left: -376px;
   }
