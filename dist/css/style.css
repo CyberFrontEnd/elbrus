@@ -1787,7 +1787,12 @@ End footer
   width: 100%;
   margin-top: 10px;
   display: none;
+  position: absolute;
+  top: 92px;
+  z-index: 9;
+  height: 100%;
 }
+
 
 .mobilMenuList {
   max-width: 95%;
@@ -1868,17 +1873,151 @@ End footer
   font: normal 600 13px 'Montserrat', sans-serif;
 }
 
+.cooperationRightMobil {
+  display: none;
+}
+
+body.hide {
+  overflow: hidden;
+}
+
+.mobilMenuSocial {
+  justify-content: space-between;
+  max-width: 93%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+}
+
+.mobilMenuSocial li {
+  max-width: 32%;
+  width: 100%;
+}
+
+.mobilMenuSocial li a {
+  border-radius: 60px;
+  background: #F0F0F0;
+  height: 36px;
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.mobilMenuSocial li a svg {
+  margin-right: 5px;
+}
+
+.mobilMenuSocial li a span {
+  font: normal 500 14px 'Montserrat', sans-serif;
+  color: #4E3639;
+}
+
+.conditerSlider {
+  display: none;
+}
+
+/*
+Start brends
+###########*/
+.brends {
+  background: #D1A279;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.brendsScroll {
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.brendsScroll li {
+  max-width: 240px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.listWidth {
+  align-items: center;
+}
+
+/*
+End brends 
+##########*/
 
 /*
 Start responsive
 ################*/
 @media (max-width: 1750px) {
+  .listWidth {
+    width: 1700px;
+  }
+
+  .brendsScroll {
+    overflow: auto;
+  }
+
   .productionsRightSlider {
     left: 5%;
+  }
+
+  .weFormLeftIn {
+    max-width: 95%;
+  }
+
+  .weFormLeftInLeft {
+    max-width: 42%;
+  }
+
+  .weFormLeftInRight {
+    max-width: 56%;
+  }
+
+  .weFormLeftInRightSection__input {
+    max-width: 49%;
+  }
+
+  .weFormLeftInRightSection__input_modif {
+    max-width: 100%;
+  }
+
+  .weFormLeftInRightSectionBottom__doc {
+    max-width: 60%;
   }
 }
 
 @media (max-width: 1640px) {
+  .cooperationIn,
   .newIn,
   .our,
   .header {
@@ -1953,9 +2092,37 @@ Start responsive
   .productionsIn {
     max-width: 95%;
   }
+
+  .cooperationContent {
+    max-width: 61%;
+  }
+
+  .cooperationLeft {
+    max-width: 56%;
+  }
+
+  .cooperationRight {
+    max-width: 36%;
+  }
+
+  .cooperationIn picture source,
+  .cooperationIn picture img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cooperationIn picture {
+    max-width: 36%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1540px) {
+  .weFormLeftIn {
+    justify-content: space-between;
+    padding-right: 3%;
+  }
+
   .productionsRightSlider {
     left: 25%;
   }
@@ -2042,6 +2209,19 @@ Start responsive
     max-width: 31%;
   }
 
+  .brends {
+    overflow: auto;
+  }
+
+  .brendsScroll {
+    width: 1900px;
+    max-width: max-content;
+  }
+
+  .brendsScroll a {
+    margin-right: 1%;
+  }
+
   .productions__center {
     font-size: 22px;
   }
@@ -2080,9 +2260,31 @@ Start responsive
   .footerBottomLeftIn {
     max-width: 90%;
   }
+
+
 }
 
 @media (max-width: 1280px) {
+  .weFormLeft__title {
+    font-size: 28px;
+  }
+
+  .weFormLeftInRightSectionBottom__doc {
+    font-size: 12px;
+  }
+
+  .weFormLeftInRight {
+    max-width: 58%;
+  }
+
+  .cooperationIn picture {
+    max-width: 40%;
+  }
+
+  .cooperationContent {
+    max-width: 54%;
+  }
+
   .productionsRightSlider source,
   .productionsRightSlider img {
     height: 450px;
@@ -2180,6 +2382,39 @@ Start responsive
 }
 
 @media (max-width: 1160px) {
+  .weFormRight {
+    display: none;
+  }
+
+  .weFormLeft {
+    max-width: 100%;
+  }
+
+  .weFormLeftIn {
+    max-width: 98%;
+  }
+
+  .cooperationRight {
+    max-width: 44%;
+  }
+
+  .cooperation {
+    height: 567px;
+  }
+
+  .cooperationContent {
+    padding-top: 100px;
+  }
+
+  .cooperationIn picture {
+    max-width: 36%;
+    margin-top: -35px;
+  }
+
+  .cooperationContent {
+    max-width: 60%;
+  }
+
   .productionsRightSlider {
     left: 40%;
   }
@@ -2208,6 +2443,19 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .conditer__title {
+    font-size: 28px;
+  }
+
+  .conditerList li .conditerList__name {
+    font-size: 22px;
+  }
+
+  .conditerList li {
+    max-width: 31.3%;
+    margin: 0 1%;
+  }
+
   .mySwiper2ContentLeftListText__title {
     font-size: 28px;
   }
@@ -2374,7 +2622,9 @@ Start responsive
 }
 
 @media (max-width: 870px) {
-  .mySwiperContentRight source, .mySwiperContentRight img {
+  .conditerList,
+  .mySwiperContentRight source,
+  .mySwiperContentRight img {
     display: none;
   }
 
@@ -2408,9 +2658,121 @@ Start responsive
   .footerTopLeftLogo {
     max-width: 100%;
   }
+
+  .cooperationIn picture {
+    margin-top: 80px;
+  }
+
+  .cooperation {
+    height: auto;
+  }
+
+  .cooperationLeft {
+    max-width: 100%;
+  }
+
+  .cooperationRight {
+    display: none;
+  }
+
+  .cooperationRightMobil {
+    display: block;
+    max-width: 100%;
+  }
+
+  .cooperationContent {
+    padding-top: 80px;
+  }
+
+  .cooperationIn {
+    padding-bottom: 50px;
+  }
+
+  .conditer__title {
+    font-size: 26px;
+    max-width: 70%;
+  }
+
+  .multiple-items2 {
+    display: block;
+    margin-top: 40px !important;
+    width: 1100px !important;
+    left: -147px;
+  }
+
+  .multiple-items2 .slick-dots {
+    max-width: 500px;
+    width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .multiple-items2 .slick-dots li button {
+    width: 90px;
+  }
+
+  .conditerSlider {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .conditerSlider,
+  .multiple-items2 .conditerList {
+    display: block;
+  }
+
+  .multiple-items2 .conditerList li {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 750px) {
+  .multiple-items2 {
+    left: -197px;
+    margin-top: 0 !important;
+  }
+
+  .weFormLeftInLeft {
+    max-width: 100%;
+  }
+
+  .weForm {
+    height: auto;
+  }
+
+  .weFormLeftInRightSection__input input {
+    max-width: 100%;
+  }
+
+  .weFormLeft {
+    padding-bottom: 100px;
+  }
+
+  .weFormLeftInRight {
+    max-width: 100%;
+    margin-top: 150px;
+  }
+
+  .weFormLeftInLeftBottom {
+    bottom: -95px;
+  }
+
+  .weFormLeft__title {
+    font-size: 26px;
+  }
+
+  .cooperationLeft__title {
+    font-size: 26px;
+  }
+
+  .cooperationContent {
+    max-width: 53%;
+  }
+
+  .cooperationIn picture {
+    max-width: 42%;
+  }
+
   .productionsLeft {
     max-width: 100%;
   }
@@ -2475,15 +2837,27 @@ Start responsive
   .headerRight {
     max-width: 270px;
   }
+
+  .conditer__title {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 680px) {
+  .multiple-items2 {
+    left: -242px;
+  }
+
   .productions__center {
     font-size: 16px;
   }
 }
 
 @media (max-width: 620px) {
+  .conditer {
+    margin: 70px auto 0;
+  }
+
   .mySwiperContentLeft__content {
     left: 33%;
     max-width: 357px;
@@ -2509,9 +2883,38 @@ Start responsive
   .footerTopRightIn {
     max-width: 75%;
   }
+
+  .conditer__title {
+    font-size: 23px;
+    max-width: 80%;
+  }
+
+  .conditer {
+    margin-bottom: 100px;
+  }
+
+  .multiple-items2 {
+    left: -255px;
+  }
 }
 
 @media (max-width: 580px) {
+  .weFormLeft__title {
+    font-size: 23px;
+  }
+
+  .weFormLeftInLeft__paragraf {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cooperationIn picture {
+    display: none;
+  }
+
+  .cooperationContent {
+    max-width: 100%;
+  }
   .productions__center {
     margin-bottom: 0;
   }
@@ -2728,9 +3131,44 @@ Start responsive
   .footerTopLeftIn {
     justify-content: flex-start;
   }
+
+  .multiple-items2 {
+    left: -306px;
+  }
 }
 
 @media (max-width: 470px) {
+  .multiple-items2 {
+    left: -350px;
+  }
+
+  .multiple-items2 .slick-dots {
+    max-width: 350px;
+  }
+
+  .multiple-items2 .slick-dots li button {
+    width: 50px;
+  }
+
+  .conditer__title {
+    font-size: 21px;
+    max-width: 90%;
+  }
+
+  .weFormLeftInRightSection__input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .weFormLeftInRightSectionBottom__doc {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .weFormLeftInRightSection {
+    margin-bottom: 0;
+  }
+
   .footerTopRightContact__address {
     max-width: 60%;
   }
@@ -2754,6 +3192,10 @@ Start responsive
 }
 
 @media (max-width: 400px) {
+  .multiple-items2 {
+    left: -376px;
+  }
+
   .descriptionIn {
     padding-top: 50px;
   }

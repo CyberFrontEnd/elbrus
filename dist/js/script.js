@@ -109,6 +109,7 @@ $(document).ready(function () {
   $('.mobilBtn').on('click', function () {
     $(this).toggleClass("active");
     $('.mobilMenu').slideToggle();
+    $('body').toggleClass('hide');
   });
 
   $('.mobilMenuListIn > a').on('click', function (event) {
@@ -116,4 +117,25 @@ $(document).ready(function () {
     $('.mobilMenuListInSub').slideToggle();
     $(this).toggleClass('active');
   });
+
+
+
+  $('.multiple-items2').slick({
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
+
+  // Start parallax
+  parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-3', moveFactor: 5, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-4', moveFactor: 5, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-5', moveFactor: 5, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-6', moveFactor: 5, wrap: '.brends',});
+  parallaxMouse({elements: '.coubs__item-7', moveFactor: 5, wrap: '.brends',});
+
 });
