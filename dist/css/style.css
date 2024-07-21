@@ -2069,9 +2069,61 @@ End politic
 ###########*/
 
 /*
+Start error
+###########*/
+.error {
+  max-width: 1880px;
+  width: 100%;
+  margin: 0 auto 20px;
+  height: 1000px;
+  background: url('../images/bg6.png') no-repeat top center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorBlock {
+  max-width: 525px;
+  width: 100%;
+}
+
+.error__title {
+  color: #87185A;
+  font: normal 600 120px 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.errorBlock__text {
+  text-align: center;
+  color: #4E3639;
+  font: normal 500 32px 'Montserrat', sans-serif;
+  line-height: 40px;
+}
+
+.error .mySwiperContentLeft__btn {
+  position: relative;
+  bottom: 0;
+  margin: 40px auto;
+  background: #A82785;
+  color: #ffffff;
+}
+
+.error .mySwiperContentLeft__btn:before {
+  background: url('../images/icon3.svg') no-repeat center;
+}
+
+/*
+End error
+#########*/
+
+/*
 Start responsive
 ################*/
 @media (max-width: 1750px) {
+  .error {
+    max-width: 98%;
+  }
+
   .listWidth {
     width: 1700px;
   }
@@ -2540,6 +2592,20 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .error {
+    background: url('../images/bg7.png') no-repeat center;
+    background-size: cover;
+    height: 740px;
+  }
+
+  .errorBlock__text {
+    font-size: 26px;
+  }
+
+  .errorBlock {
+    max-width: 400px;
+  }
+  
   .politicIn {
     max-width: 90%;
     width: 100%;
@@ -3013,6 +3079,20 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .error {
+    background: url('../images/BG8.png') no-repeat center;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .error__title {
+    font-size: 100px;
+  }
+
+  .errorBlock__text {
+    font-size: 23px;
+  }
+
   .politic__title {
     font-size: 26px;
   }
