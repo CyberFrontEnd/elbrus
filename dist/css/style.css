@@ -2117,6 +2117,459 @@ End error
 #########*/
 
 /*
+Start bread
+###########*/
+.bread {
+  max-width: 1600px;
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+.bread li span,
+.bread li a {
+  color: rgba(78, 54, 57, 0.8);
+  font: normal 500 14px 'Montserrat', sans-serif;
+}
+
+.bread li a:after {
+  content: " | ";
+  margin: 0 6px 0 3px;
+}
+
+/*
+End bread
+#########*/
+
+/*
+Start titleSection
+##################*/
+.titleSection {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.titleSectionLeft,
+.titleSectionRight {
+  max-width: 50%;
+  width: 100%;
+}
+
+.titleSectionRight source,
+.titleSectionRight img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.titleSectionLeft {
+  background: rgba(135, 24, 90) url("../images/bg9.svg") no-repeat top left;
+  height: 360px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.titleSectionLeft__title {
+  color: #ffffff;
+  font: normal 500 38px 'Montserrat', sans-serif;
+  margin: 140px 0 0 133px;
+}
+
+.titleSectionLeft__title:before {
+  content: "";
+  display: block;
+  background: url('../images/icon10.svg') no-repeat top center;
+  width: 40px;
+  height: 24px;
+}
+
+/*
+End titleSection
+################*/
+
+
+/*
+Start contactMap
+#############*/
+.contactMap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 60px auto 80px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contactMapRight,
+.contactMapLeft {
+  max-width: 750px;
+  width: 100%;
+}
+
+.contactMap__title {
+  color: #4E3639;
+  font: normal 500 26px 'Montserrat', sans-serif;
+}
+
+.contactMap__title:before {
+  content: "";
+  background: url('../images/icon2.svg') no-repeat center;
+  width: 40px;
+  height: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contactMap__title:after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 2px;
+  background: #4E3639;
+  margin-top: 25px;
+}
+
+.contactMapContent {
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.contactMapContentLeft {
+  max-width: 300px;
+  width: 100%;
+}
+
+.contactMap:before {
+  content: "";
+  display: block;
+  height: 825px;
+  position: absolute;
+  width: 1px;
+  background: #4E3639;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.contactMapContentRight {
+  max-width: 270px;
+  width: 100%;
+}
+
+.contactMapContentLeft__title {
+  text-transform: uppercase;
+  color: #4E3639;
+  font: normal 600 13px 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+.contactMapContentLeft__address {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.contactMapContent__href {
+  text-transform: uppercase;
+  color: #4E3639;
+  font: normal 600 13px 'Montserrat', sans-serif;
+  max-width: 195px;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  background: #F0F0F0;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mapBlock {
+  margin-top: 40px;
+}
+
+.contactMapContentRight__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4E3639;
+  font: normal 600 13px 'Montserrat', sans-serif;
+}
+
+.contactMapContentRight__tel {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/*
+End contactMap
+############*/
+
+
+/*
+Start article
+#############*/
+.article {
+  max-width: 1600px;
+  width: 100%;
+  margin: 20px auto 0;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.articleAside {
+  max-width: 340px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.articleAsideSoc__title {
+  text-align: center;
+  color: rgba(78, 54, 57, 1);
+  font: normal 600 16px 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.articleAsideSocBtn {
+  justify-content: space-between;
+}
+
+.articleAsideSocBtn li a {
+  width: 80px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  background: #F6F6F6;
+  border-radius: 6px;
+}
+
+.articleAsideUsRight {
+  max-width: 240px;
+  width: 100%;
+}
+
+.articleAsideUsRight__name {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+}
+
+.articleAsideUsRight__text {
+  color: #4E3639;
+  font: normal normal 14px 'Montserrat', sans-serif;
+  line-height: 24px;
+}
+
+.articleAsideUs {
+  justify-content: space-between;
+  border-bottom: 1px solid #eae7e7;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.articleContent {
+  max-width: 1100px;
+  width: 100%;
+  margin-top: 100px;
+  justify-content: flex-start;
+}
+
+.articleContentLeft {
+  max-width: 930px;
+  width: 100%;
+}
+
+.article__date {
+  color: #4E3639;
+  font: normal 500 16px 'Montserrat', sans-serif;
+}
+
+.article__date:before {
+  content: "";
+  display: block;
+  background: url('../images/icon2.svg') no-repeat center;
+  width: 40px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.article__title {
+  color: #4E3639;
+  font: normal 500 38px 'Montserrat', sans-serif;
+  margin-top: 10px;
+}
+
+.articleContentLeft picture source,
+.articleContentLeft picture img {
+  border-radius: 10px;
+}
+
+.articleContentLeft picture {
+  margin-top: 40px;
+  display: block;
+}
+
+.article__paragraf {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+  margin-top: 40px;
+  line-height: 24px;
+}
+
+.article__title2 {
+  color: #4E3639;
+  font: normal 500 32px 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+
+.article__title3 {
+  color: #4E3639;
+  font: normal 500 26px 'Montserrat', sans-serif;
+}
+
+.article__text {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+.article__title3.border:before {
+  content: "";
+  width: 66px;
+  height: 2px;
+  background: #4E3639;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.article__text2 {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  line-height: 24px;
+  margin-top: 50px;
+}
+
+.article__text2 span {
+  color: #A82783;
+  font: normal 600 16px 'Montserrat', sans-serif;
+}
+
+.articleImg {
+  justify-content: space-between;
+}
+
+.articleImg source,
+.articleImg img {
+  border-radius: 15px;
+  max-width: 450px;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.article__title4 {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.articleList {
+  margin-top: 10px;
+}
+
+.articleList li {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.articleList li span {
+  color: #4E3639;
+  font: normal normal 16px 'Montserrat', sans-serif;
+  max-width: 98%;
+  width: 100%;
+  line-height: 24px;
+}
+
+.articleList li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #4E3639;
+  border-radius: 100px;
+  position: relative;
+  top: 5px;
+}
+
+.article__text span {
+  font: normal 600 16px 'Montserrat', sans-serif;
+  color: #4E3639;
+}
+
+.articleBottom {
+  border-top: 1px solid #e3dfdf;
+  padding-top: 5px;
+  margin-top: 30px;
+  max-width: 370px;
+  width: 100%;
+}
+
+.articleSlider {
+  margin-bottom: 100px;
+}
+
+.articleSlider source,
+.articleSlider img {
+  height: 480px;
+  border-radius: 15px;
+}
+
+.articleSlider .slick-dots {
+  margin-top: 0;
+}
+
+.articleSlider .slick-dots li{
+  margin: 0 3px;
+}
+
+.articleSlider .slick-dots li button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 100px;
+}
+
+/*
+End article
+############*/
+
+/*
 Start responsive
 ################*/
 @media (max-width: 1750px) {

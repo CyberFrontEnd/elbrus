@@ -129,6 +129,16 @@ $(document).ready(function () {
   });
 
 
+
+  $('.articleSlider').slick({
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
