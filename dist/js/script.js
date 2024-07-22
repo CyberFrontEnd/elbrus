@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $('#tab-container').easytabs({
+    animationSpeed: 'fast',
+    updateHash: false
+  });
+
   $('.multiple-items').slick({
     infinite: false,
     dots: true,
@@ -148,4 +153,5 @@ $(document).ready(function () {
   parallaxMouse({elements: '.coubs__item-6', moveFactor: 5, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-7', moveFactor: 5, wrap: '.brends',});
 
+  // Start tab
 });

@@ -2569,10 +2569,70 @@ Start article
 End article
 ############*/
 
+.etabs {
+  max-width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  background: #ffffff;
+  height: 56px;
+  border-radius: 8px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.etabs li a {
+  color: #4E3639;
+  font: normal 600 14px 'Montserrat', sans-serif;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 0 25px;
+}
+
+.tab-container {
+  max-width: 690px;
+  width: 100%;
+}
+
+.etabs li a.active {
+  background: #A82783;
+  border-radius: 5px;
+  color: #ffffff;
+  font: normal 600 14px 'Montserrat', sans-serif;
+}
+
+.etabs li.tab {
+  position: relative;
+}
+
+.titleSectionRight__planshet,
+.titleSectionRight__mobil {
+  display: none;
+}
+
 /*
 Start responsive
 ################*/
 @media (max-width: 1750px) {
+  .tab-container {
+    max-width: 56%;
+  }
+
+  .tab-container .weFormLeftInRight {
+    max-width: 100%;
+  }
+
   .error {
     max-width: 98%;
   }
@@ -2615,11 +2675,18 @@ Start responsive
 }
 
 @media (max-width: 1640px) {
+  .contactMap,
+  .bread,
+  .titleSection,
   .cooperationIn,
   .newIn,
   .our,
   .header {
     max-width: 95%;
+  }
+
+  .titleSectionRight source, .titleSectionRight img {
+    height: 360px;
   }
 
   .newSliderContent {
@@ -2713,6 +2780,10 @@ Start responsive
     max-width: 36%;
     width: 100%;
   }
+
+  .contactMapRight, .contactMapLeft {
+    max-width: 48%;
+  }
 }
 
 @media (max-width: 1540px) {
@@ -2803,6 +2874,10 @@ Start responsive
 }
 
 @media (max-width: 1370px) {
+  .etabs li a {
+    padding: 0 17px;
+  }
+
   .productionsLeft {
     max-width: 31%;
   }
@@ -2863,6 +2938,14 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .contactMapContentLeft {
+    max-width: 55%;
+  }
+
+  .contactMapContentRight {
+    max-width: 40%;
+  }
+
   .politicIn {
     margin: 0 auto;
   }
@@ -2968,6 +3051,11 @@ Start responsive
 }
 
 @media (max-width: 1210px) {
+  .etabs li a.active,
+  .etabs li a {
+    font-size: 12px;
+  }
+
   .headerRight__phone {
     max-width: 68%;
   }
@@ -2984,6 +3072,20 @@ Start responsive
 }
 
 @media (max-width: 1160px) {
+  .titleSectionRight source,
+  .titleSectionRight img,
+  .titleSectionLeft {
+    height: 300px;
+  }
+
+  .titleSectionLeft {
+    background-size: cover;
+  }
+
+  .titleSectionLeft__title {
+    margin: 140px 0 0 90px;
+  }
+
   .weFormRight {
     display: none;
   }
@@ -3045,6 +3147,18 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .contactMapRight, .contactMapLeft {
+    max-width: 100%;
+  }
+
+  .contactMap:before {
+    display: none;
+  }
+
+  .contactMapRight {
+    margin-top: 50px;
+  }
+
   .error {
     background: url('../images/bg7.png') no-repeat center;
     background-size: cover;
@@ -3161,6 +3275,15 @@ Start responsive
 }
 
 @media (max-width: 990px) {
+  .titleSection {
+    max-width: 100%;
+  }
+
+  .titleSectionLeft,
+  .titleSectionRight source, .titleSectionRight img {
+    border-radius: 0;
+  }
+
   .productionsRightSlider {
     left: 47%;
     max-width: 1010px;
@@ -3243,6 +3366,14 @@ Start responsive
 }
 
 @media (max-width: 870px) {
+  .weFormLeftInRightSectionBottom__doc {
+    max-width: 58%;
+  }
+
+  .contactMap__title {
+    font-size: 23px;
+  }
+
   .conditerList,
   .mySwiperContentRight source,
   .mySwiperContentRight img {
@@ -3348,6 +3479,48 @@ Start responsive
 }
 
 @media (max-width: 750px) {
+  .tab-container {
+    max-width: 100%;
+    margin-top: 130px;
+  }
+
+  .tab-container .weFormLeftInRight {
+    margin-top: 20px;
+  }
+
+  .mapBlock iframe,
+  .mapBlock {
+    height: 300px;
+  }
+
+  .titleSectionRight__desc {
+    display: none;
+  }
+
+  .titleSectionRight__planshet {
+    display: block;
+  }
+
+  .titleSectionRight source, .titleSectionRight img {
+    width: 100%;
+  }
+
+  .titleSectionLeft {
+    max-width: 60%;
+  }
+
+  .titleSectionRight {
+    max-width: 40%;
+  }
+
+  .titleSectionLeft {
+    background: rgba(135, 24, 90) url('../images/bg10.png') no-repeat top left;
+  }
+
+  .titleSectionLeft__title {
+    margin: 140px 0 0 45px;
+  }
+
   .politic__title {
     font-size: 32px;
   }
@@ -3532,6 +3705,57 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .tab-container .weFormLeftInRightSection__input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tab-container .weFormLeftInRightSection {
+    margin-bottom: 0;
+  }
+
+  .tab-container .weFormLeftInRightSectionBottom__doc {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .etabs {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .etabs li {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .etabs li:last-child {
+    border-bottom: none;
+  }
+
+  .contactMap__title {
+    font-size: 20px;
+  }
+
+  .contactMapContentLeft {
+    max-width: 100%;
+  }
+
+  .contactMapContentRight {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .titleSectionRight__planshet {
+    display: none;
+  }
+
+  .titleSectionRight__mobil {
+    display: block;
+  }
+
   .error {
     background: url('../images/BG8.png') no-repeat center;
     background-size: cover;
@@ -3793,6 +4017,24 @@ Start responsive
 
   .multiple-items2 {
     left: -306px;
+  }
+
+  .titleSectionLeft {
+    max-width: 70%;
+    background: rgba(135, 24, 90) url('../images/bg11.png') no-repeat top left;
+  }
+
+  .titleSectionRight {
+    max-width: 30%;
+  }
+
+  .titleSectionRight source, .titleSectionRight img, .titleSectionLeft {
+    height: 260px;
+  }
+
+  .titleSectionLeft__title {
+    margin: 90px 0 0 45px;
+    font-size: 26px;
   }
 }
 

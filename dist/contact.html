@@ -235,9 +235,19 @@
     </div>
 
     <div class="titleSectionRight">
-        <picture>
+        <picture class="titleSectionRight__desc">
             <source srcset="images/contact.avif">
             <img src="images/contact.jpg" alt="" loading="lazy">
+        </picture>
+
+        <picture class="titleSectionRight__planshet">
+            <source srcset="images/contact2.avif">
+            <img src="images/contact2.jpg" alt="" loading="lazy">
+        </picture>
+
+        <picture class="titleSectionRight__mobil">
+            <source srcset="images/contact3.avif">
+            <img src="images/contact3.jpg" alt="" loading="lazy">
         </picture>
     </div>
 </section>
@@ -329,63 +339,140 @@
                 </div>
             </div>
 
-            <form enctype="text/plain" class="weFormLeftInRight" action="">
-                <div class="weFormLeftInRightSection flex">
-                    <div class="weFormLeftInRightSection__input">
-                        <label for="name">Ваше имя*</label>
-                        <input placeholder="Имя" required type="text" id="name">
-                    </div>
+            <div class="tab-container" id="tab-container">
+                <ul class="etabs flex">
+                    <li class="tab active"><a href="#common">Общие вопросы</a></li>
+                    <li class="tab"><a href="#cooperation">Сотрудничество</a></li>
+                    <li class="tab"> <a href="#career">Карьера</a></li>
+                </ul>
 
-                    <div class="weFormLeftInRightSection__input">
-                        <label for="city">Ваш город*</label>
-                        <input placeholder="Город" required type="text" id="city">
-                    </div>
+                <div id="common">
+                    <form enctype="text/plain" class="weFormLeftInRight" action="">
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="name">Ваше имя*</label>
+                                <input placeholder="Имя" required type="text" id="name">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="phone">Ваш телефон*</label>
+                                <input placeholder="Ваш телефон*" required type="text" id="phone" class="phone_mask">
+                            </div>
+
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="email">Ваш e-mail*</label>
+                                <input placeholder="elbrus@elbrus.com" required type="email" id="email">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
+                                <label for="massege">Ваше сообщение</label>
+                                <input placeholder="Текст" required type="text" id="massege">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSectionBottom flex">
+                            <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+
+                            <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
+                        </div>
+
+                        <hr class="weFormLeftInRightSectionBottom__line">
+
+                        <div class="weFormLeftInRightSectionBottom__warning">* - обязательные для заполнения поля</div>
+                    </form>
                 </div>
 
+                <div id="cooperation">
+                    <form enctype="text/plain" class="weFormLeftInRight" action="">
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="name2">Ваше имя*</label>
+                                <input placeholder="Имя" required type="text" id="name2">
+                            </div>
+                        </div>
 
-                <div class="weFormLeftInRightSection flex">
-                    <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
-                        <label for="company">Ваша компания*</label>
-                        <input placeholder="Название компании" required type="text" id="company">
-                    </div>
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="phone2">Ваш телефон*</label>
+                                <input placeholder="Ваш телефон*" required type="text" id="phone2" class="phone_mask">
+                            </div>
+
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="email2">Ваш e-mail*</label>
+                                <input placeholder="elbrus@elbrus.com" required type="email" id="email2">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
+                                <label for="massege2">Ваше сообщение</label>
+                                <input placeholder="Текст" required type="text" id="massege2">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSectionBottom flex">
+                            <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+
+                            <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
+                        </div>
+
+                        <hr class="weFormLeftInRightSectionBottom__line">
+
+                        <div class="weFormLeftInRightSectionBottom__warning">* - обязательные для заполнения поля</div>
+                    </form>
                 </div>
 
-                <div class="weFormLeftInRightSection flex">
-                    <div class="weFormLeftInRightSection__input">
-                        <label for="phone">Ваш телефон*</label>
-                        <input placeholder="Ваш телефон*" required type="text" id="phone" class="phone_mask">
-                    </div>
+                <div id="career">
+                    <form enctype="text/plain" class="weFormLeftInRight" action="">
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="name3">Ваше имя*</label>
+                                <input placeholder="Имя" required type="text" id="name3">
+                            </div>
+                        </div>
 
-                    <div class="weFormLeftInRightSection__input">
-                        <label for="email">Ваш e-mail*</label>
-                        <input placeholder="elbrus@elbrus.com" required type="email" id="email">
-                    </div>
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="phone3">Ваш телефон*</label>
+                                <input placeholder="Ваш телефон*" required type="text" id="phone3" class="phone_mask">
+                            </div>
+
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="email3">Ваш e-mail*</label>
+                                <input placeholder="elbrus@elbrus.com" required type="email" id="email3">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
+                                <label for="massege3">Ваше сообщение</label>
+                                <input placeholder="Текст" required type="text" id="massege3">
+                            </div>
+                        </div>
+
+                        <div class="weFormLeftInRightSectionBottom flex">
+                            <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+
+                            <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
+                        </div>
+
+                        <hr class="weFormLeftInRightSectionBottom__line">
+
+                        <div class="weFormLeftInRightSectionBottom__warning">* - обязательные для заполнения поля</div>
+                    </form>
                 </div>
-
-                <div class="weFormLeftInRightSection flex">
-                    <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
-                        <label for="massege">Ваше сообщение</label>
-                        <input placeholder="Текст" required type="text" id="massege">
-                    </div>
-                </div>
-
-                <div class="weFormLeftInRightSectionBottom flex">
-                    <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
-
-                    <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
-                </div>
-
-                <hr class="weFormLeftInRightSectionBottom__line">
-
-                <div class="weFormLeftInRightSectionBottom__warning">* - обязательные для заполнения поля</div>
-            </form>
+            </div>
         </div>
     </div>
 
     <div class="weFormRight">
         <picture>
-            <source srcset="images/we.avif">
-            <img src="images/we.jpg" alt="" loading="lazy">
+            <source srcset="images/we2.avif">
+            <img src="images/we2.jpg" alt="" loading="lazy">
         </picture>
     </div>
 </section>
@@ -647,6 +734,7 @@
 <script src="js/slick.js"></script>
 <script src="js/tel.js"></script>
 <script src="js/swipe.js"></script>
+<script src="js/tab.js"></script>
 <script src="js/script.js"></script>
 
 </body>
