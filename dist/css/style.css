@@ -2675,6 +2675,7 @@ Start responsive
 }
 
 @media (max-width: 1640px) {
+  .article,
   .contactMap,
   .bread,
   .titleSection,
@@ -2787,6 +2788,10 @@ Start responsive
 }
 
 @media (max-width: 1540px) {
+  .articleContent {
+    max-width: 72%;
+  }
+
   .weFormLeftIn {
     justify-content: space-between;
     padding-right: 3%;
@@ -2874,6 +2879,15 @@ Start responsive
 }
 
 @media (max-width: 1370px) {
+  .articleImg source, .articleImg img {
+    max-width: 100%;
+  }
+
+  .articleImg li {
+    max-width: 48%;
+    width: 100%;
+  }
+
   .etabs li a {
     padding: 0 17px;
   }
@@ -2938,6 +2952,10 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .articleContent {
+    max-width: 64%;
+  }
+
   .contactMapContentLeft {
     max-width: 55%;
   }
@@ -3072,6 +3090,14 @@ Start responsive
 }
 
 @media (max-width: 1160px) {
+  .articleImg source, .articleImg img {
+    height: 350px;
+  }
+
+  .articleSlider source, .articleSlider img {
+    height: 430px;
+  }
+
   .titleSectionRight source,
   .titleSectionRight img,
   .titleSectionLeft {
@@ -3147,6 +3173,13 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .articleContent {
+    max-width: 60%;
+  }
+
+  .articleImg source, .articleImg img {
+    height: 280px;
+  }
   .contactMapRight, .contactMapLeft {
     max-width: 100%;
   }
@@ -3275,6 +3308,31 @@ Start responsive
 }
 
 @media (max-width: 990px) {
+  .article {
+    flex-direction: column-reverse;
+  }
+
+  .articleContent {
+    margin-top: 50px;
+  }
+
+  .article__title {
+    font-size: 32px;
+  }
+
+  .article__title2 {
+    font-size: 26px;
+  }
+
+  .article__title3 {
+    font-size: 23px;
+  }
+
+  .articleSlider source, .articleSlider img {
+    height: 350px;
+  }
+
+  .articleContent,
   .titleSection {
     max-width: 100%;
   }
@@ -3705,6 +3763,34 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .article__title {
+    font-size: 26px;
+  }
+
+  .article__title2 {
+    font-size: 23px;
+  }
+
+  .article__title3 {
+    font-size: 20px;
+  }
+
+  .articleImg li {
+    max-width: 100%;
+  }
+
+  .articleImg source, .articleImg img {
+    height: auto;
+  }
+
+  .articleSlider source, .articleSlider img {
+    height: 250px;
+  }
+
+  .articleSlider {
+    margin-bottom: 50px;
+  }
+
   .tab-container .weFormLeftInRightSection__input {
     max-width: 100%;
     margin-bottom: 20px;
