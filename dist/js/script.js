@@ -36,6 +36,8 @@ $(document).ready(function () {
     ]
   });
 
+  // Start select
+  $('.select').multipleSelect({});
 
   // Start multiple-itemsNew
   $('.multiple-itemsNew').slick({
@@ -169,9 +171,6 @@ $(document).ready(function () {
 
   // Start metis menu
   $("#menu1").metisMenu();
-
-  // Start select
-  $('.select').multipleSelect({});
 
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
