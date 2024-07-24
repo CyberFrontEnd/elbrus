@@ -22,8 +22,8 @@ $(document).ready(function () {
       {
         breakpoint: 870,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 3,
+          slidesToScroll: 1
         }
       },
       {
@@ -144,6 +144,12 @@ $(document).ready(function () {
   });
 
 
+  // Start metis menu
+  $("#menu1").metisMenu();
+
+  // Start select
+  $('.select').multipleSelect({});
+
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
@@ -152,6 +158,4 @@ $(document).ready(function () {
   parallaxMouse({elements: '.coubs__item-5', moveFactor: 5, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-6', moveFactor: 5, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-7', moveFactor: 5, wrap: '.brends',});
-
-  // Start tab
 });
