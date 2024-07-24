@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 575,
+        breakpoint: 775,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
@@ -42,6 +42,14 @@ $(document).ready(function () {
     infinite: false,
     dots: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+  $('.qualityMobilSlider').slick({
+    infinite: true,
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
     slidesToScroll: 1,
   });
 
@@ -107,6 +115,21 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
+    },
+  });
+
+
+  // Start ourProductSlider
+  const ourProductSlider = new Swiper(".ourProductSlider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination4",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next4",
+      prevEl: ".swiper-button-prev4",
     },
   });
 
