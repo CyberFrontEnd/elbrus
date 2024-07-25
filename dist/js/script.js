@@ -37,7 +37,7 @@ $(document).ready(function () {
   });
 
   // Start select
-  $('.select').multipleSelect({});
+   $('.select').multipleSelect({});
 
   // Start multiple-itemsNew
   $('.multiple-itemsNew').slick({
