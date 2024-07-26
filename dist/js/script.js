@@ -194,6 +194,56 @@ $(document).ready(function () {
     $('body').removeClass('hide');
   });
 
+
+  const SwiperVertical = new Swiper(".SwiperVertical", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true,
+    navigation: {
+      nextEl: ".swiper-button-next5",
+      prevEl: ".swiper-button-prev5",
+    },
+    pagination: {
+      el: ".swiper-pagination5",
+      type: "fraction",
+    },
+  });
+
+  $('.itemBtnPopup').on('click', ()=> {
+    $('.itemBtnPopupContent').addClass('active');
+    setTimeout(function() {
+      $('body').addClass('hide');
+    }, 100);
+  });
+
+  $('.itemBtnPopup__closed').on('click', ()=> {
+    $('.itemBtnPopupContent').removeClass('active');
+    $('body').removeClass('hide');
+  });
+
+
+  const itemPopUpSlider2 = new Swiper(".itemPopUpSlider2", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+
+  const itemPopUpSlider = new Swiper(".itemPopUpSlider", {
+    loop: true,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: itemPopUpSlider2,
+    },
+  });
+
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
