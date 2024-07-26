@@ -3165,7 +3165,7 @@ Start blogMain
 }
 
 .ms-parent {
-  width: 245px !important;
+  width: 255px !important;
 }
 
 .ms-choice > span {
@@ -3502,6 +3502,193 @@ Start item
 /*
 End item
 ########*/
+
+/*
+Start filterMobil
+#############*/
+.filterMobil {
+  position: absolute;
+  z-index: 99;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding: 40px;
+  display: none;
+}
+
+.filterMobilTop {
+  max-width: 95%;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.filterMobilTop__title {
+  text-transform: uppercase;
+  color: #4E3639;
+  font: normal 600 18px 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+.filterMobil__btn {
+  background: url('../images/closed.svg') no-repeat center;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.filterMobilBottom {
+  background: #ffffff;
+  padding: 20px 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.filterMobilBottom__clear {
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  height: 48px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #4E3639;
+  font: normal 600 13px 'Montserrat', sans-serif;
+  background: #F0F0F0;
+}
+
+.filterMobilBottom__clear.apply {
+  background: #A82785;
+  color: #ffffff;
+}
+
+.filterMobilBody {
+  height: 630px;
+  overflow-y: scroll;
+  max-width: 95%;
+  width: 100%;
+  margin: 45px auto 0;
+}
+
+.filterMobilBody .allCatalogFilter li a.active {
+  background: none;
+}
+
+.filterMobilBody .allCatalogFilter li a {
+  padding-left: 0;
+  height: 50px;
+}
+
+.filterMobilBody .allCatalogFilter {
+  max-width: 98%;
+  width: 100%;
+}
+
+.filterMobilBody .allCatalogFilter li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 0;
+}
+
+.filterMobilBody .allCatalogMenu {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 30px;
+}
+
+.filterMobilBody .metismenu .has-arrow:hover {
+  background: none;
+}
+
+.filterMobilBody .metismenu .has-arrow {
+  padding: 15px 0 15px 0;
+}
+
+.filterMobilBody .metismenu > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.filterMobilBody::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(78, 54, 57, 0.24);
+}
+
+.filterMobilBody .allCatalogFilter li a:hover {
+  background: none;
+}
+
+.filterMobilBody::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(78, 54, 57, 0.24);
+}
+
+.filterMobilBody::-webkit-scrollbar-thumb {
+  background-color: #4E3639;
+}
+
+.filterMobilBody .allCatalogFilter {
+  margin-top: 0;
+}
+
+.filterMobilBody .allCatalogMenu {
+  max-width: 98%;
+}
+
+.filterMobilFilter {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+  max-width: 140px;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background: rgba(168, 39, 133, 1);
+  font: normal 600 13px 'Montserrat', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 100px;
+  right: 3%;
+  z-index: 999999999;
+}
+
+.filterMobilFilter:before {
+  content: "";
+  display: block;
+  background: url('../images/icon13.svg') no-repeat center;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.filterMobil.active {
+  display: block;
+}
+
+.news3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 100px;
+  padding-top: 0;
+}
+
+/*
+End filterMobil
+############*/
 
 /*
 Start responsive
@@ -3902,6 +4089,19 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .titleSectionRight source, .titleSectionRight img,
+  .titleSectionLeft {
+    height: 320px;
+  }
+
+  .allCatalogLeftTitle__title {
+    font-size: 22px;
+  }
+
+  .allCatalogRightFilterCheckbox {
+    max-width: 70%;
+  }
+
   .articleContent {
     max-width: 64%;
   }
@@ -4045,6 +4245,11 @@ Start responsive
 }
 
 @media (max-width: 1160px) {
+  .filterMobilFilter.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .allCatalogLeft {
     display: none;
   }
@@ -4699,6 +4904,19 @@ Start responsive
   
   .qualityMobilSlider {
     left: -26%;
+  }
+
+  .filterMobilBottom__clear {
+    max-width: 48%;
+  }
+
+  .filterMobilBottom {
+    max-width: 95%;
+  }
+
+  .filterMobilTop,
+  .filterMobilBody {
+    max-width: 100%;
   }
 }
 
@@ -5445,6 +5663,10 @@ Start responsive
   .allCatalogContent .newSliderContent {
     height: 410px;
   }
+
+  .filterMobil {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -5572,5 +5794,29 @@ Start responsive
 
   .footerTopLeftMenu {
     margin-right: 2%;
+  }
+}
+
+@media (max-height: 890px) {
+  .filterMobilBody {
+    height: 516px;
+  }
+}
+
+@media (max-height: 750px) {
+  .filterMobilBody {
+    height: 416px;
+  }
+}
+
+@media (max-height: 650px) {
+  .filterMobilBody {
+    height: 350px;
+  }
+}
+
+@media (max-height: 570px) {
+  .filterMobilBody {
+    height: 250px;
   }
 }

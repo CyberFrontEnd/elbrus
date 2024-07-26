@@ -171,6 +171,28 @@ $(document).ready(function () {
 
   // Start metis menu
   $("#menu1").metisMenu();
+  $("#menu2").metisMenu();
+
+  // Start filter btn scroll
+  $(window).on('scroll', function() {
+    const scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition > 50) {
+      $('.filterMobilFilter').addClass('active');
+    } else {
+      $('.filterMobilFilter').removeClass('active');
+    }
+  });
+
+  $('.filterMobilFilter').on('click', function () {
+    $('.filterMobil').addClass('active');
+    $('body').addClass('hide');
+  });
+
+  $('.filterMobil__btn').on('click', function () {
+    $('.filterMobil').removeClass('active');
+    $('body').removeClass('hide');
+  });
 
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
