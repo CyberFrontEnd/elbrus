@@ -196,10 +196,9 @@ $(document).ready(function () {
 
 
   const SwiperVertical = new Swiper(".SwiperVertical", {
-    direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 0,
-    mousewheel: true,
+    mousewheel: false,
     navigation: {
       nextEl: ".swiper-button-next5",
       prevEl: ".swiper-button-prev5",
@@ -207,6 +206,16 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination5",
       type: "fraction",
+    },
+    breakpoints: {
+      1370: {
+        slidesPerView: 1,
+        direction: "vertical",
+      },
+      1024: {
+        slidesPerView: 1,
+        direction: "horizontal",
+      },
     },
   });
 
@@ -243,6 +252,24 @@ $(document).ready(function () {
       swiper: itemPopUpSlider2,
     },
   });
+
+
+  $('.itemRightDesc__mobilBtn').on('click', (e) => {
+    e.preventDefault();
+    const $button = $(e.currentTarget);
+    const $list = $('.itemRightDescList:last-of-type');
+
+    $list.slideToggle(() => {
+      if ($button.data('state') === 'collapsed') {
+        $button.text('Свернуть');
+        $button.data('state', 'expanded');
+      } else {
+        $button.text('Смотреть больше');
+        $button.data('state', 'collapsed');
+      }
+    });
+  });
+
 
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
