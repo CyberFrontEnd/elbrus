@@ -271,6 +271,13 @@ $(document).ready(function () {
   });
 
 
+  var historySlider = new Swiper(".historySlider", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
