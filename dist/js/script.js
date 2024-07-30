@@ -278,6 +278,39 @@ $(document).ready(function () {
     },
   });
 
+
+  $('.sertificateRight-tabs .tab').click(function () {
+    const tabNumber = $(this).data('tab');
+
+    // Remove active class from all content
+    $('.sertificateRight-contents .content').removeClass('active');
+
+    // Add active class to the clicked tab's corresponding content
+    $('.sertificateRight-contents .content[data-tab="' + tabNumber + '"]').addClass('active');
+
+    // Remove active class from all tabs
+    $('.sertificateRight-tabs .tab').removeClass('active');
+
+    // Add active class to the clicked tab
+    $(this).addClass('active');
+  });
+
+
+  const sertificateSlider = new Swiper(".sertificateSlider", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination6",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next6",
+      prevEl: ".swiper-button-prev6",
+    },
+  });
+
+
+
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
   parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});

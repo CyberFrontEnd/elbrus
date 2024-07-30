@@ -1035,7 +1035,7 @@ Start cooperation
 .cooperation {
   background: #FAECDC;
   height: 670px;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .cooperationIn {
@@ -3765,7 +3765,7 @@ End filterMobil
 }
 
 .itemBtnPopupContent.active {
-  position: absolute;
+  position: fixed;
   z-index: 99999999;
   visibility: visible;
   top: 0;
@@ -3997,20 +3997,30 @@ Start idea
 End idea
 ########*/
 .aboutImgList {
-  max-width: 1600px;
-  width: 100%;
+  width: 1600px;
   margin: 140px auto 0;
   justify-content: space-between;
   position: relative;
 }
 
+.mobilScrollAbout {
+  overflow-y: scroll;
+}
+
+.mobilScrollAbout::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+.mobilScrollAbout::-webkit-scrollbar {
+  width: 0;
+}
+
+.mobilScrollAbout::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
 .aboutImgList li img {
   border-radius: 10px;
-  height: 420px;
-  max-width: 382px;
-  width: 100%;
-  display: block;
-  object-fit: cover;
 }
 
 .aboutImg {
@@ -4045,7 +4055,7 @@ End idea
 .aboutItem {
   max-width: 1600px;
   width: 100%;
-  margin: 200px auto 0;
+  margin: 100px auto 0;
 }
 
 .aboutItem .ourProductSliderContent .productionsLeft {
@@ -4066,7 +4076,7 @@ Start career
 .career {
   max-width: 1600px;
   width: 100%;
-  margin: 120px auto 0;
+  margin: 120px auto;
   justify-content: space-between;
 }
 
@@ -4464,6 +4474,201 @@ End history
 ############*/
 
 /*
+Start sertificate
+#################*/
+.sertificate {
+  max-width: 100%;
+  width: 100%;
+  background: #FFE9ED;
+  padding: 100px 0;
+}
+
+.sertificateIn {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sertificateScroll {
+  overflow-x: scroll;
+}
+
+.sertificateScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+.sertificateScroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.sertificateScroll::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0)
+}
+
+.sertificateContent {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sertificateLeft {
+  max-width: 545px;
+  width: 100%;
+}
+
+.sertificateLeft__img source,
+.sertificateLeft__img img {
+  border-radius: 10px;
+}
+
+.sertificateRight {
+  max-width: 930px;
+  width: 100%;
+}
+
+.sertificateRight__title {
+  color: #4E3639;
+  font: normal 500 32px 'Montserrat', sans-serif;
+}
+
+.sertificateRight__title:before {
+  content: "";
+  display: block;
+  background: url('../images/icon2.svg') no-repeat center;
+  width: 40px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.sertificateRight .content {
+  visibility: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+.sertificateRight .active {
+  visibility: visible;
+}
+
+.sertificateRight .content.active {
+  position: absolute;
+  top: 50px;
+}
+
+.sertificateRight .tab {
+  cursor: pointer;
+}
+
+.sertificateRight .contents {
+  position: relative;
+}
+
+.sertificateRight .tabs {
+  margin-top: 30px;
+}
+
+.sertificateRight .tabs div {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  border: 1px solid rgba(78, 54, 57, 0.24);
+  margin-right: 15px;
+  color: #4E3639;
+  font: normal 600 14px 'Montserrat', sans-serif;
+}
+
+.sertificateRight .tabs div.active {
+  border: 1px solid rgba(78, 54, 57, 0);
+  background: #A82785;
+  color: #ffffff;
+  font: normal 600 14px 'Montserrat', sans-serif;
+}
+
+.sertificateSliderBlock {
+  position: relative;
+  background: #ffffff;
+  max-width: 300px;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.sertificateSliderBlockBottom {
+  position: absolute;
+  bottom: 20px;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.sertificateSliderBlockBottom__tag {
+  color: #4E3639;
+  font: normal 500 14px 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.sertificateSliderBlockBottom__href {
+  color: #4E3639;
+  font: normal 600 16px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  width: 90%;
+  line-height: 24px;
+  display: block;
+}
+
+.sertificateSliderBlock .itemBtnPopupIcon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.swiperNavigation6 {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
+  padding-top: 40px;
+}
+
+.swiper-button-next6 {
+  background: url('../images/icon25.svg') no-repeat center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  left: 117px;
+  cursor: pointer;
+}
+
+.swiper-button-prev6 {
+  background: url('../images/icon25.svg') no-repeat center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  left: 60px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.swiper-pagination6 {
+  position: absolute;
+  top: 32px !important;
+  left: 0;
+  color: #4E3639;
+  font: normal 500 14px 'Montserrat', sans-serif;
+}
+
+/*
+End sertificate
+###############*/
+
+/*
 Start responsive
 ################*/
 @media (min-width: 1950px) {
@@ -4493,6 +4698,10 @@ Start responsive
 @media (max-width: 1650px) {
   .historySliderNav {
     margin: -55px 0 0 130px;
+  }
+
+  .aboutImgList {
+    margin-left: 2%;
   }
 }
 
@@ -4563,7 +4772,9 @@ Start responsive
 }
 
 @media (max-width: 1640px) {
-  .aboutImgList,
+  .document,
+  .career,
+  .aboutItem,
   .idea,
   .itemIn,
   .blogMain,
@@ -4579,6 +4790,41 @@ Start responsive
   .our,
   .header {
     max-width: 95%;
+  }
+
+  .sertificateContent {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .sertificateLeft {
+    max-width: 35%;
+  }
+
+  .sertificateScroll {
+    padding-bottom: 35px;
+    overflow-x: visible;
+  }
+
+  .sertificateRight {
+    max-width: 60%;
+  }
+
+  .sertificateSliderBlock {
+    max-width: 95%;
+    height: 320px;
+  }
+
+  .sertificateSliderBlockBottom__href {
+    font-size: 15px;
+  }
+
+  .sertificateRight .content.active {
+    top: 30px;
+  }
+
+  .sertificate {
+    padding: 100px 0 70px;
   }
 
   .qualityIn {
@@ -4729,18 +4975,22 @@ Start responsive
     max-width: 48%;
   }
 
-  .aboutImgList li {
-    max-width: 24%;
-    width: 100%;
-  }
-
-  .aboutImgList li img {
-    max-width: 100%;
-    height: 100%;
+  .aboutItem .ourProductSliderContent .productionsLeft {
+    margin-left: 5%;
   }
 }
 
 @media (max-width: 1540px) {
+  .careerLeft {
+    max-width: 58%;
+    margin-top: 0;
+  }
+
+  .career__img {
+    max-width: 38%;
+    width: 100%;
+  }
+
   .blogContent2Center {
     max-width: 43%;
   }
@@ -4781,6 +5031,22 @@ Start responsive
 
   .footerTopRightIn {
     max-width: 75%;
+  }
+}
+
+@media (max-width: 1490px) {
+  .aboutItem .ourProductSliderContent source,
+  .aboutItem .ourProductSliderContent img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .aboutItem .ourProductSliderContent .productionsLeft {
+    max-width: 40%;
+  }
+
+  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
+    max-width: 98%;
   }
 }
 
@@ -4862,6 +5128,27 @@ Start responsive
 }
 
 @media (max-width: 1370px) {
+  .sertificateLeft {
+    max-width: 30%;
+  }
+
+  .sertificateRight {
+    max-width: 67%;
+  }
+
+  .sertificate {
+    padding: 100px 0 150px;
+  }
+
+  .documentList {
+    justify-content: space-between;
+  }
+
+  .careerBlockList li span {
+    max-width: 88%;
+    font-size: 14px;
+  }
+
   .historySliderRight source, .historySliderRight img {
     height: 680px;
   }
@@ -4984,6 +5271,10 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .aboutItem {
+    margin: 100px auto 0;
+  }
+
   .historySliderNav {
     margin: -55px 0 0 40px;
   }
@@ -5155,6 +5446,14 @@ Start responsive
 }
 
 @media (max-width: 1210px) {
+  .sertificate {
+    padding: 100px 0 180px;
+  }
+
+  .documentList li a span {
+    font-size: 14px;
+  }
+
   .ideaList__paragraf {
     font-size: 12px;
     line-height: 18px;
@@ -5201,16 +5500,44 @@ Start responsive
 }
 
 @media (max-width: 1150px) {
-  margin: -55px 0 0 10px;
+  .sertificate {
+    padding: 100px 0 220px;
+  }
 }
 
 @media (max-width: 1135px) {
+  .careerBlockList li span {
+    max-width: 85%;
+  }
+
   .historySliderNav {
     margin: -55px 0 0 7px;
+  }
+
+  .documentList li a span {
+    width: 65%;
+    word-wrap: break-word;
   }
 }
 
 @media (max-width: 1079px) {
+  .sertificateLeft {
+    display: none;
+  }
+
+  .sertificateRight {
+    max-width: 100%;
+  }
+
+  .sertificate{
+    padding: 100px 0;
+    height: 750px;
+  }
+
+  .sertificateSliderBlock {
+    height: 350px;
+  }
+
   .itemIn {
     flex-direction: column;
   }
@@ -5360,6 +5687,20 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .aboutItem .ourProductSliderContent {
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
+    max-width: 100%;
+  }
+
+  .aboutItem .ourProductSliderContent {
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
   .idea {
     flex-direction: column;
     margin: 50px auto 0;
@@ -5529,9 +5870,21 @@ Start responsive
   .footerTopLeftMenu__modeif {
     max-width: 35%;
   }
+
+  .documentList li {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 990px) {
+  .ourProductSliderContent picture {
+    max-width: 35%;
+  }
+
+  .aboutItem .ourProductSliderContent .productionsLeft {
+    max-width: 56%;
+  }
+
   .historySliderRight {
     display: none;
   }
@@ -5777,6 +6130,32 @@ Start responsive
   .blogContentHorizont {
     justify-content: space-between;
   }
+
+  .careerBlockList li span {
+    max-width: 83%;
+  }
+
+  .careerBlockList {
+    max-width: 50%;
+  }
+
+  .sertificateContent {
+    width: 950px;
+    height: 600px;
+  }
+
+  .sertificateRight__title{
+    font-size: 26px;
+  }
+
+  .sertificateScroll {
+    overflow-x: scroll;
+    margin-left: 5%;
+  }
+
+  .sertificateSliderBlock {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -6011,6 +6390,16 @@ Start responsive
   .blogContent2Center a, .blogContent2Center {
     max-width: 90%;
   }
+
+  .aboutItem .ourProductSliderContent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aboutItem .ourProductSliderContent .productionsLeft {
+    max-width: 53%;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 800px) {
@@ -6042,6 +6431,14 @@ Start responsive
 }
 
 @media (max-width: 750px) {
+  .historySliderLeftBlock__title {
+    font-size: 32px;
+  }
+
+  .historySliderLeftBlock__name {
+    font-size: 24px;
+  }
+
   .popupItemcareer .weFormLeftInRightSection__input {
     max-width: 48%;
   }
@@ -6296,6 +6693,18 @@ Start responsive
   .itemRightDescList {
     max-width: 250px;
   }
+
+  .careerLeft__title {
+    font-size: 26px;
+  }
+
+  .careerBlockList {
+    max-width: 100%;
+  }
+
+  .documentList li a {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 680px) {
@@ -6403,6 +6812,45 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .sertificateSliderBlock {
+    height: 320px;
+  }
+
+  .sertificateRight__title {
+    width: 39%;
+    display: block;
+  }
+
+  .sertificate {
+    padding: 65px 0;
+    height: 715px;
+  }
+
+  .aboutItem .ourProductSliderContent {
+    flex-direction: column;
+  }
+
+  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
+    max-width: 77%;
+  }
+
+  .aboutItem .ourProductSliderContent .productionsLeft {
+    max-width: 100%;
+  }
+
+  .aboutItem .ourProductSliderContent picture {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .historySliderBottom {
+    max-width: 300px;
+  }
+
+  .historySliderBottomList {
+    width: 134px;
+  }
+
   .weFormLeftInRightSectionBottom .weFormLeftInRightSectionBottom__doc {
     max-width: 100%;
     margin-bottom: 20px;
@@ -6983,6 +7431,14 @@ Start responsive
   .itemPopUpSlider2Nav {
     bottom: 230px;
     max-width: 420px;
+  }
+
+  .career__img {
+    display: none;
+  }
+
+  .careerLeft {
+    max-width: 100%;
   }
 }
 
