@@ -463,6 +463,11 @@ Start catalog
   background: url('../images/icon7.svg') no-repeat center;
   width: 35px;
   height: 35px;
+  transition: all, 0.4s;
+}
+
+.mySwiperContentLeft__btn:hover:before {
+  background: url('../images/icon26.svg') no-repeat center;
 }
 
 .autoplay-progress span {
@@ -1303,6 +1308,14 @@ Start news
   position: absolute;
   right: 0;
   margin-top: 32px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.newsBtn:hover {
+  background: #E2E2E2;
 }
 
 .newsBtn:before {
@@ -1311,6 +1324,11 @@ Start news
   background: url('../images/icon3.svg') no-repeat center;
   width: 35px;
   height: 35px;
+  transition: all, 0.5s;
+}
+
+.newsBtn:hover:before {
+  background: url('../images/icon27.svg') no-repeat center;
 }
 
 .newsSlider {
@@ -1576,6 +1594,7 @@ Start weForm
   letter-spacing: 1px;
   font: normal 600 13px 'Montserrat', sans-serif;
   padding-right: 20px;
+  transition: all, 0.5s;
 }
 
 .weFormLeftInRightSectionBottom__btn:before {
@@ -1584,6 +1603,15 @@ Start weForm
   width: 34px;
   height: 34px;
   margin-left: 7px;
+  transition: all, 0.5s;
+}
+
+.weFormLeftInRightSectionBottom__btn:hover:before {
+  background: url('../images/icon28.svg') no-repeat center;
+}
+
+.weFormLeftInRightSectionBottom__btn:hover {
+  background: #87185A;
 }
 
 .weFormLeftInRightSectionBottom__doc {
