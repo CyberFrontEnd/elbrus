@@ -110,6 +110,7 @@ $(document).ready(function () {
   const productionsRightSlider = new Swiper(".productionsRightSlider", {
     slidesPerView: 3,
     spaceBetween: 20,
+    loop: true,
     pagination: {
       el: ".swiper-pagination3",
       type: "fraction",

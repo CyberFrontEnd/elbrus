@@ -97,18 +97,6 @@
         </div>
 
         <div class="headerRight flex">
-            <ul class="headerRightList flex">
-                <li>
-                    <a href="#" class="headerRightList__active">en</a>
-                </li>
-
-                <li class="headerRightList__line"></li>
-
-                <li>
-                    <a href="#">ru</a>
-                </li>
-            </ul>
-
             <a href="tel:+7 (866) 240-74-50" class="headerRight__phone flex">+7 (866) 240-74-50</a>
         </div>
     </div>
@@ -390,27 +378,40 @@
                     <form enctype="text/plain" class="weFormLeftInRight" action="">
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input">
-                                <label for="name2">Ваше имя*</label>
-                                <input placeholder="Имя" required type="text" id="name2">
+                                <label for="name22">Ваше имя*</label>
+                                <input placeholder="Имя" required type="text" id="name22">
+                            </div>
+
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="city22">Ваш город*</label>
+                                <input placeholder="Город" required type="text" id="city22">
+                            </div>
+                        </div>
+
+
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
+                                <label for="company">Ваша компания*</label>
+                                <input placeholder="Название компании" required type="text" id="company">
                             </div>
                         </div>
 
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input">
-                                <label for="phone2">Ваш телефон*</label>
-                                <input placeholder="Ваш телефон*" required type="text" id="phone2" class="phone_mask">
+                                <label for="phone22">Ваш телефон*</label>
+                                <input placeholder="Ваш телефон*" required type="text" id="phone22" class="phone_mask">
                             </div>
 
                             <div class="weFormLeftInRightSection__input">
-                                <label for="email2">Ваш e-mail*</label>
-                                <input placeholder="elbrus@elbrus.com" required type="email" id="email2">
+                                <label for="email22">Ваш e-mail*</label>
+                                <input placeholder="elbrus@elbrus.com" required type="email" id="email22">
                             </div>
                         </div>
 
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
-                                <label for="massege2">Ваше сообщение</label>
-                                <input placeholder="Текст" required type="text" id="massege2">
+                                <label for="massege22">Ваше сообщение</label>
+                                <input placeholder="Текст" required type="text" id="massege22">
                             </div>
                         </div>
 
@@ -430,32 +431,55 @@
                     <form enctype="text/plain" class="weFormLeftInRight" action="">
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input">
-                                <label for="name3">Ваше имя*</label>
-                                <input placeholder="Имя" required type="text" id="name3">
+                                <label for="name2">Ваше имя*</label>
+                                <input placeholder="Имя" required type="text" id="name2">
+                            </div>
+
+                            <div class="weFormLeftInRightSection__input">
+                                <label for="city2">Ваш город*</label>
+                                <input placeholder="Город" required type="text" id="city2">
                             </div>
                         </div>
 
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input">
-                                <label for="phone3">Ваш телефон*</label>
-                                <input placeholder="Ваш телефон*" required type="text" id="phone3" class="phone_mask">
+                                <label for="phone2">Ваш телефон*</label>
+                                <input placeholder="Ваш телефон*" required type="text" id="phone2" class="phone_mask">
                             </div>
 
                             <div class="weFormLeftInRightSection__input">
-                                <label for="email3">Ваш e-mail*</label>
-                                <input placeholder="elbrus@elbrus.com" required type="email" id="email3">
+                                <label for="email2">Ваш e-mail*</label>
+                                <input placeholder="elbrus@elbrus.com" required type="email" id="email2">
                             </div>
                         </div>
 
                         <div class="weFormLeftInRightSection flex">
                             <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
-                                <label for="massege3">Ваше сообщение</label>
-                                <input placeholder="Текст" required type="text" id="massege3">
+                                <label for="company2">Специальность</label>
+                                <input placeholder="Название компании" required type="text" id="company2">
                             </div>
                         </div>
 
+                        <div class="weFormLeftInRightSection flex">
+                            <div class="weFormLeftInRightSection__input weFormLeftInRightSection__input_modif">
+                                <label for="massege2">Ваше сообщение</label>
+                                <input placeholder="Текст" required type="text" id="massege2">
+                            </div>
+                        </div>
+
+                        <div class="popupItemcareerLoad flex">
+                            <div class="popupItemcareerLoadText flex">
+                                <div class="popupItemcareerLoadText__title">Загрузите свое резюме</div>
+                                <div class="popupItemcareerLoadText__sub">Перетащите сюда файл или <span>нажмите сюда</span></div>
+                                <div class="popupItemcareerLoadText__sub popupItemcareerLoadText__subLoad"><span>Загрузить</span></div>
+                            </div>
+
+                            <input type="file">
+                        </div>
+
                         <div class="weFormLeftInRightSectionBottom flex">
-                            <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных данных</a></div>
+                            <div class="weFormLeftInRightSectionBottom__doc">Нажимая кнопку отправить вы соглашаетесь с <a href="">политикой обработки персональных
+                                данных</a></div>
 
                             <a href="#" class="weFormLeftInRightSectionBottom__btn flex">отправить</a>
                         </div>

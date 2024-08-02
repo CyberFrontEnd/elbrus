@@ -255,7 +255,7 @@ Start header
 .headerRight {
   max-width: 310px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -562,6 +562,7 @@ Start our
   max-width: 49.5%;
   width: 100%;
   height: 615px;
+  position: relative;
 }
 
 .mySwiper2ContentLeftList li {
@@ -585,7 +586,7 @@ Start our
   position: absolute;
   top: 40px;
   right: 0;
-  max-width: 440px;
+  max-width: 470px;
   width: 100%;
   height: 225px;
 }
@@ -1218,6 +1219,11 @@ Start conditer
   margin-top: 30px;
   padding-right: 15px;
   padding-left: 8px;
+  transition: all, 0.5s;
+}
+
+.cooperation__btn:hover {
+  background: #87185A;
 }
 
 .cooperation__btn:before {
@@ -1225,6 +1231,11 @@ Start conditer
   background: url('../images/icon4.svg') no-repeat center;
   width: 34px;
   height: 34px;
+  transition: all, 0.5s;
+}
+
+.cooperation__btn:hover:before {
+  background: url('../images/icon27.svg') no-repeat center;
 }
 
 .cooperationRight {
@@ -1447,6 +1458,7 @@ Start weForm
   max-width: 100%;
   width: 100%;
   height: 740px;
+  overflow: hidden;
 }
 
 .weFormRight {
@@ -1524,6 +1536,10 @@ Start weForm
   max-width: 670px;
   width: 100%;
   margin-top: 55px;
+}
+
+.tab-container .weFormLeftInRight {
+  margin-top: 30px;
 }
 
 .weFormLeftInRightSection {
@@ -2323,6 +2339,7 @@ Start contactMap
 }
 
 .contactMapContent__href {
+  transition: all, 0.5s;
   text-transform: uppercase;
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
@@ -2335,6 +2352,10 @@ Start contactMap
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+
+.contactMapContent__href:hover {
+  background: #E2E2E2;
 }
 
 .mapBlock {
@@ -2390,6 +2411,10 @@ Start article
 }
 
 .articleAsideSocBtn li a {
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
   width: 80px;
   height: 48px;
   display: -webkit-box;
@@ -2407,6 +2432,10 @@ Start article
   -webkit-flex-wrap: wrap;
   background: #F6F6F6;
   border-radius: 6px;
+}
+
+.articleAsideSocBtn li a:hover {
+  background: #F0F0F0;
 }
 
 .articleAsideUsRight {
@@ -2825,6 +2854,7 @@ Start allCatalog
 }
 
 .navigation__btn {
+  transition: all, 0.5s;
   max-width: 230px;
   width: 100%;
   height: 46px;
@@ -2848,8 +2878,12 @@ Start allCatalog
   height: 35px;
 }
 
-.navigationNav {
+.navigation__btn:hover {
+  background: #E2E2E2;
+}
 
+.navigation__btn:hover:before {
+  background: url('../images/icon27.svg') no-repeat center;
 }
 
 .navigationNav li {
@@ -3197,6 +3231,11 @@ Start blogMain
   height: 42px !important;
   background: #F0F0F0 !important;
   border-radius: 60px !important;
+  transition: all, 0.5s;
+}
+
+.ms-choice:hover {
+  background: #E2E2E2 !important;
 }
 
 .ms-parent {
@@ -4509,6 +4548,8 @@ Start sertificate
   width: 100%;
   background: #FFE9ED;
   padding: 100px 0;
+  overflow: hidden;
+  height: 770px;
 }
 
 .sertificateIn {
@@ -4695,6 +4736,15 @@ Start sertificate
 /*
 End sertificate
 ###############*/
+
+.mySwiper2Content2 {
+  flex-direction: row-reverse;
+}
+
+.productionsRightSliderBlock {
+  max-width: 430px;
+  width: 100%;
+}
 
 /*
 Start responsive
@@ -5393,6 +5443,8 @@ Start responsive
 
   .productions {
     padding-top: 0;
+    height: auto;
+    padding-bottom: 200px;
   }
 
   .mySwiper2ContentLeftListText {
@@ -6459,6 +6511,10 @@ Start responsive
 }
 
 @media (max-width: 750px) {
+  .mySwiperContentLeft__btn {
+    bottom: -50px;
+  }
+
   .historySliderLeftBlock__title {
     font-size: 32px;
   }
@@ -6930,12 +6986,6 @@ Start responsive
   .popupItemList {
     justify-content: space-between;
   }
-
-  .popupItemList li
-
-) {
-
-}
 
   .itemRightDesc__mobilBtn {
     display: flex;
