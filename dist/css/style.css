@@ -4746,6 +4746,14 @@ End sertificate
   width: 100%;
 }
 
+.weFormLeftInRightSection__input input.weFormLeftInRightSection__error {
+  background: #ffffff url('../images/icon29.svg') no-repeat 97% 50%;
+}
+
+.weFormLeftInRightSection__input input.weFormLeftInRightSection__error2 {
+  background: #F0F0F0 url('../images/icon29.svg') no-repeat 97% 50%;
+}
+
 /*
 Start responsive
 ################*/
