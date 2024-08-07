@@ -311,6 +311,10 @@ $(document).ready(function () {
   });
 
 
+  $('[data-fancybox]').fancybox({
+        autoFocus: false,
+   });
+
 
   // Start parallax
   parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
