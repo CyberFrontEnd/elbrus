@@ -57,14 +57,16 @@ $(document).ready(function () {
 
 
   // Start intlTelInput
-  function phoneMask() {
-    $('.phone_mask').intlTelInput({
-      utilsScript: "js/utils.js",
-      preferredCountries: ["ru", "by", "ua", "kz"]
-    });
-  }
+  // function phoneMask() {
+  //   $('.phone_mask').intlTelInput({
+  //     utilsScript: "js/utils.js",
+  //     preferredCountries: ["ru", "by", "ua", "kz"]
+  //   });
+  // }
+  //
+  // phoneMask();
 
-  phoneMask();
+  $(".phone_mask").inputmask("+7 (999) 999-99-99");
 
   // Start mySwiper
   const progressCircle = document.querySelector(".autoplay-progress svg");
@@ -164,7 +166,7 @@ $(document).ready(function () {
   $('.articleSlider').slick({
     infinite: true,
     dots: true,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   });
@@ -273,6 +275,7 @@ $(document).ready(function () {
 
 
   var historySlider = new Swiper(".historySlider", {
+    effect: "fade",
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
