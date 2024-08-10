@@ -11,6 +11,7 @@
   <link href="css/slick.css" rel="stylesheet">
   <link href="css/tel.css" rel="stylesheet">
   <link href="css/swiper.css" rel="stylesheet">
+  <link href="css/animation.css" rel="stylesheet">
 
 
   <title> Главная </title>
@@ -39,47 +40,56 @@
         <li class="headerMenuSub">
           <a href="#"><span>продукция</span></a>
 
-          <ul class="headerMenuSubIn flex">
-            <li>
-              <a href="#">Всё</a>
-            </li>
+          <div class="headerMenuSubIn flex">
+            <div class="headerMenuSubInSec flex">
+              <div class="headerMenuSubInSecIn flex">
 
-            <li>
-              <a href="#">Печенье</a>
-            </li>
+                <ul class="headerMenuSubInSecInList flex">
+                  <li>
+                    <a href="#">Всё</a>
+                  </li>
 
-            <li>
-              <a href="#">Конфеты</a>
-            </li>
+                  <li>
+                    <a href="#">Печенье</a>
+                  </li>
 
-            <li>
-              <a href="#">Ирис</a>
-            </li>
+                  <li>
+                    <a href="#">Конфеты</a>
+                  </li>
 
-            <li>
-              <a href="#">Пастила</a>
-            </li>
+                  <li>
+                    <a href="#">Ирис</a>
+                  </li>
 
-            <li>
-              <a href="#">Драже</a>
-            </li>
+                  <li>
+                    <a href="#">Пастила</a>
+                  </li>
 
-            <li>
-              <a href="#">Мармелад</a>
-            </li>
+                  <li>
+                    <a href="#">Драже</a>
+                  </li>
 
-            <li>
-              <a href="#">Наборы конфет</a>
-            </li>
+                  <li>
+                    <a href="#">Мармелад</a>
+                  </li>
 
-            <li>
-              <a href="#">Зефир</a>
-            </li>
+                  <li>
+                    <a href="#">Наборы конфет</a>
+                  </li>
 
-            <li>
-              <a href="#">Фигурки из глазури</a>
-            </li>
-          </ul>
+                  <li>
+                    <a href="#">Зефир</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Фигурки из глазури</a>
+                  </li>
+                </ul>
+
+                <img src="images/img2.jpg" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
         </li>
 
         <li>
@@ -1307,43 +1317,43 @@
   <div class="brendsScroll">
     <ul class="flex listWidth">
       <li>
-        <a href="#" class="coubs__item-1">
+        <a href="#">
           <img src="images/nestle.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-2">
+        <a href="#">
           <img src="images/star.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-3">
+        <a href="#">
           <img src="images/s.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-4">
+        <a href="#">
           <img src="images/metropolis.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-5">
+        <a href="#">
           <img src="images/shokolad.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-6">
+        <a href="#">
           <img src="images/lavazza.png" alt="" loading="lazy">
         </a>
       </li>
 
       <li>
-        <a href="#" class="coubs__item-7">
+        <a href="#">
           <img src="images/nespro.png" alt="" loading="lazy">
         </a>
       </li>
@@ -1355,7 +1365,7 @@
 <!--Start weForm-->
 <section class="weForm flex">
   <div class="weFormLeft flex">
-    <div class="weFormLeftIn flex">
+    <div class="weFormLeftIn flex wow fadeInUp" data-wow-offset="200" data-wow-duration="2s">
       <div class="weFormLeftInLeft">
         <h2 class="weFormLeft__title">Мы всегда открыты для сотрудничества</h2>
         <p class="weFormLeftInLeft__paragraf">Заполните небольшую анкету на нашем сайте и отправьте нам. Мы обязательно рассмотрим ваше предложение и свяжемся с вами.</p>
@@ -1421,15 +1431,15 @@
 
   <div class="weFormRight">
     <picture>
-      <source srcset="images/we.avif">
-      <img src="images/we.jpg" alt="" loading="lazy">
+      <source srcset="images/we.avif" class="wow animImg" data-wow-offset="200" data-wow-duration="2s">
+      <img src="images/we.jpg" alt="" loading="lazy" class="wow animImg" data-wow-offset="200" data-wow-duration="2s">
     </picture>
   </div>
 </section>
 <!--End weForm-->
 
 <!--Start conditer-->
-<section class="conditer">
+<section class="conditer wow fadeInUp" data-wow-offset="200" data-wow-duration="2s">
   <h2 class="conditer__title">Эльбрус – номер один в производстве кондитерских изделий</h2>
 
   <ul class="conditerList flex">
@@ -1674,6 +1684,7 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/phoneMask.js"> </script>
+<script src="js/wow.js"></script>
 <script src="js/migrate.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/slick.js"></script>

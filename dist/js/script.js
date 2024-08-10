@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  new WOW().init();
+
   $('#tab-container').easytabs({
     animationSpeed: 'fast',
     updateHash: false
@@ -310,6 +312,46 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".swiper-button-next6",
       prevEl: ".swiper-button-prev6",
+    },
+  });
+
+  const sertificateSlider2 = new Swiper(".sertificateSlider2", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination7",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next7",
+      prevEl: ".swiper-button-prev7",
+    },
+  });
+
+
+  const sertificateSlider3 = new Swiper(".sertificateSlider3", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination8",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next8",
+      prevEl: ".swiper-button-prev8",
+    },
+  });
+
+  const sertificateSlider4 = new Swiper(".sertificateSlider4", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination9",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next9",
+      prevEl: ".swiper-button-prev9",
     },
   });
 
