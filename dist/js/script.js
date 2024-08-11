@@ -110,11 +110,33 @@ $(document).ready(function () {
   });
 
 
-  // Start productionsRightSlider
+
+// Start productionsRightSlider
+  const productionsRightAnimation = $('.productionsRightAnimation');
+  const productionsRightBlockAnimate = $('.productionsRightBlockAnimate');
+  const productionsRightAnimationText = $('.productionsRightAnimationText');
+  const productionsNavCountAnimate = $('.js-productionsNavCountAnimate');
+
+  function createPaginateCount(slidesLength) {
+    const items = [];
+
+    for (let i = 0; i < slidesLength; i++) {
+      if (i === 0) {
+        items.push(`<span class='active'>${i + 1}</span>`)
+      } else {
+        items.push(`<span>${i + 1}</span>`)
+      }
+    }
+
+    return items.join('');
+  }
+
   const productionsRightSlider = new Swiper(".productionsRightSlider", {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
+    allowTouchMove: true,
+    speed: 1100,
     pagination: {
       el: ".swiper-pagination3",
       type: "fraction",
@@ -123,6 +145,67 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
     },
+    on: {
+      init: (swiper) => {
+        const { slides } = swiper;
+        if (slides && slides.length) {
+          productionsNavCountAnimate.find('.swiper-pagination-current').before(`<span class="swiper-pagination-current-custom">${createPaginateCount(slides.length)}</span>`);
+        }
+      },
+    },
+    breakpoints: {
+      768: {
+        allowTouchMove: false,
+      },
+    },
+  });
+
+  productionsRightSlider.on('slideChangeTransitionStart', (event) => {
+    productionsRightBlockAnimate.addClass('is-disabled');
+
+    productionsRightAnimationText.find('.active').removeClass('active');
+    productionsRightAnimationText.find('.productionsRightSliderContent').eq(event.realIndex).addClass('active');
+
+    productionsNavCountAnimate.find('.swiper-pagination-current-custom .active').removeClass('active');
+    productionsNavCountAnimate.find('.swiper-pagination-current-custom span').eq(event.realIndex).addClass('active');
+  });
+
+  productionsRightSlider.on('slideChangeTransitionEnd', () => {
+    productionsRightBlockAnimate.removeClass('is-disabled');
+  });
+
+  productionsRightSlider.on('slideNextTransitionStart', () => {
+    productionsRightAnimation.addClass('is-animate-next');
+  });
+
+  productionsRightSlider.on('slideNextTransitionEnd', (event) => {
+    productionsRightAnimation.find('.productionsRightSliderBlock.active').removeClass('active');
+    productionsRightAnimation.find('.productionsRightSliderBlock').eq(event.realIndex).addClass('active');
+    productionsRightAnimation.removeClass('is-animate-next');
+  });
+
+  productionsRightSlider.on('slidePrevTransitionStart', (event) => {
+    productionsRightAnimation.addClass('is-animate-prev');
+    productionsRightAnimation.find('.productionsRightSliderBlock.active').removeClass('active');
+    productionsRightAnimation.find('.productionsRightSliderBlock').eq(event.realIndex).addClass('active');
+  });
+
+  productionsRightSlider.on('slidePrevTransitionEnd', () => {
+    productionsRightAnimation.removeClass('is-animate-prev');
+  });
+
+  $('.js-swiperButtonAnimate').on('click', (event) => {
+    const elem = $(event.currentTarget);
+    elem.addClass('is-animate-hide');
+    elem.addClass('is-animate-hide-svg');
+
+    setTimeout(() => {
+      elem.removeClass('is-animate-hide');
+    }, 400);
+
+    setTimeout(() => {
+      elem.removeClass('is-animate-hide-svg');
+    }, 700)
   });
 
 
@@ -359,4 +442,30 @@ $(document).ready(function () {
   $('[data-fancybox]').fancybox({
         autoFocus: false,
    });
+
+
+
+  const $ul = $('.flexic');
+  const wrapperHeight = $('.wrapper').height();
+
+
+  $ul.children().clone().appendTo($ul);
+
+
+  function checkScrollDirection() {
+    const wrapperOffsetTop = $('.wrapper').offset().top;
+    const windowHeight = $(window).height();
+    const scrollPosition = $(window).scrollTop();
+
+    // Проверяем, находится ли верхняя часть wrapper выше середины экрана
+    if (scrollPosition > (wrapperOffsetTop + wrapperHeight - windowHeight / 2)) {
+      $ul.css('animation', 'scroll-reverse 20s linear infinite');
+    } else {
+      $ul.css('animation', 'scroll 20s linear infinite');
+    }
+  }
+
+  // Проверка при загрузке страницы и при прокрутке
+  checkScrollDirection();
+  $(window).on('scroll', checkScrollDirection);
 });
