@@ -5204,6 +5204,10 @@ End sertificate
   margin-bottom: 30px;
 }
 
+.newsSliderItem {
+  overflow: hidden;
+}
+
 /*
 Start responsive
 ################*/

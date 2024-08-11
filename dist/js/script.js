@@ -359,14 +359,4 @@ $(document).ready(function () {
   $('[data-fancybox]').fancybox({
         autoFocus: false,
    });
-
-
-  // Start parallax
-  parallaxMouse({elements: '.coubs__item-1', moveFactor: 10, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-2', moveFactor: 5, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-3', moveFactor: 5, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-4', moveFactor: 5, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-5', moveFactor: 5, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-6', moveFactor: 5, wrap: '.brends',});
-  parallaxMouse({elements: '.coubs__item-7', moveFactor: 5, wrap: '.brends',});
 });

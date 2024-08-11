@@ -3056,7 +3056,7 @@
 
 @keyframes scaleAnimation {
   0% {
-    transform: scale(1);
+    transform: scale(.99);
   }
   100% {
     transform: scale(1.1);
@@ -3065,10 +3065,27 @@
 
 
 .animImg {
-  animation: scaleAnimation 2s ease-in-out alternate;
+  animation: scaleAnimation 1s ease-in-out alternate;
+}
+
+
+
+@keyframes scaleAnimation2 {
+  0% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animImg2 {
+  animation: scaleAnimation2 1s ease-in-out alternate;
 }
 
 
 /*
 class="wow animImg" data-wow-offset="200" data-wow-duration="2s"
+
+wow fadeInUp" data-wow-offset="200" data-wow-duration="2s
 */
