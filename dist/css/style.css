@@ -2802,7 +2802,7 @@ End article
 Start quality
 ############*/
 .quality {
-  background: #87185A url('../images/bg12.png') no-repeat top center;
+  background: #87185A;
   height: 685px;
   margin-bottom: 400px;
 }
@@ -5206,6 +5206,19 @@ End sertificate
 
 .newsSliderItem {
   overflow: hidden;
+}
+
+.quality__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+
+.qualityIn {
+  position: relative;
+  z-index: 1;
 }
 
 /*

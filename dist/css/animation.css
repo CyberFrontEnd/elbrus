@@ -3063,12 +3063,9 @@
   }
 }
 
-
 .animImg {
   animation: scaleAnimation 1s ease-in-out alternate;
 }
-
-
 
 @keyframes scaleAnimation2 {
   0% {
