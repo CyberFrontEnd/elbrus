@@ -5272,6 +5272,8 @@ End sertificate
   }
 }
 
+
+
 /*
 Start responsive
 ################*/
@@ -7790,6 +7792,10 @@ Start responsive
   .qualityMobilSlider .qualityItem {
     max-width: 310px;
   }
+
+  .brendsScroll {
+    padding: 20px 0;
+  }
 }
 
 @media (max-width: 580px) {
@@ -7952,10 +7958,6 @@ Start responsive
 
   .allCatalogRightFilterCheckbox::-webkit-scrollbar {
     width: 0;
-  }
-
-  .allCatalogRightFilterCheckbox::-webkit-scrollbar-thumb {
-
   }
 
   .qualityMobilSlider {

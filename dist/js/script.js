@@ -49,6 +49,16 @@ $(document).ready(function () {
     slidesToScroll: 1,
   });
 
+  $('.multiple-itemsNew .slick-slide').hover(
+    function() {
+      $(this).closest('.multiple-itemsNew').slick('slickNext');
+    },
+    function() {
+      $(this).closest('.multiple-itemsNew').slick('slickPrev');
+    }
+  );
+
+
   $('.qualityMobilSlider').slick({
     infinite: true,
     dots: true,
@@ -445,6 +455,7 @@ $(document).ready(function () {
 
 
 
+  // Start brand
   const $ul = $('.flexic');
   const wrapperHeight = $('.wrapper').height();
 
@@ -457,7 +468,7 @@ $(document).ready(function () {
     const windowHeight = $(window).height();
     const scrollPosition = $(window).scrollTop();
 
-    // Проверяем, находится ли верхняя часть wrapper выше середины экрана
+
     if (scrollPosition > (wrapperOffsetTop + wrapperHeight - windowHeight / 2)) {
       $ul.css('animation', 'scroll-reverse 20s linear infinite');
     } else {
@@ -465,7 +476,6 @@ $(document).ready(function () {
     }
   }
 
-  // Проверка при загрузке страницы и при прокрутке
   checkScrollDirection();
   $(window).on('scroll', checkScrollDirection);
 });
