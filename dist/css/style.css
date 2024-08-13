@@ -308,7 +308,7 @@ Start header
   width: 35px;
   height: 35px;
   position: absolute;
-  left: 8px;
+  left: 6px;
 }
 
 .headerMenuSubIn li {
@@ -1790,6 +1790,7 @@ Start footer
   max-width: 42%;
   width: 100%;
   padding: 67px;
+  position: relative;
 }
 
 .footerTopRightIn {
@@ -1808,14 +1809,14 @@ Start footer
 }
 
 .footerTopRightContact__address {
-  color: #ffffff;
+  color: #FFDEEE;
   font: normal 500 14px 'Montserrat', sans-serif;
   margin-top: 10px;
 }
 
 .footerTopRightContact__email,
 .footerTopRightContact__phone {
-  color: #ffffff;
+  color: #FFDEEE;
   font: normal 500 14px 'Montserrat', sans-serif;
   margin-top: 20px;
   display: block;
@@ -1873,7 +1874,20 @@ Start footer
 
 .footerBottom {
   height: 52px;
-  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+
+.footerTopRight:after {
+  content: "";
+  height: 52px;
+  background: #F6F6F6;
+  width: 100%;
+  position: absolute;
+  bottom: -52px;
+  left: 0;
+  z-index: 1;
+  display: block;
 }
 
 .footerBottomLeft {
@@ -1894,7 +1908,7 @@ Start footer
 .footerBottomLeftIn {
   align-items: center;
   height: 52px;
-  max-width: 715px;
+  max-width: 976px;
   width: 100%;
 }
 
@@ -1910,9 +1924,11 @@ Start footer
 }
 
 .footerBottomRight__text {
-  margin-left: 8%;
   color: #87185A;
   font: normal 600 14px 'Montserrat', sans-serif;
+  position: absolute;
+  z-index: 9;
+  bottom: -35px;
 }
 
 .footerBottomRight__text img {
@@ -5273,6 +5289,12 @@ End sertificate
 }
 
 
+.footerBottomIn {
+  max-width: 1510px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
 
 /*
 Start responsive
@@ -5289,7 +5311,16 @@ Start responsive
   }
 }
 
+@media (max-width: 1881px) {
+  .headerMenuSubInSec {
+    max-width: 1325px;
+  }
+}
+
 @media (max-width: 1780px) {
+  .footerBottomIn {
+    max-width: 1540px;
+  }
   .historySliderRight {
     padding-left: 5%;
   }
@@ -5308,6 +5339,10 @@ Start responsive
 }
 
 @media (max-width: 1810px) {
+  .footerTopRight {
+    background-position: 115% 0;
+  }
+
   .headerMenuSubInSec {
     max-width: 1279px;
   }
@@ -5718,6 +5753,10 @@ Start responsive
 }
 
 @media (max-width: 1540px) {
+  .footerBottomIn {
+    max-width: 93.6%;
+  }
+
   .weFormRight {
     display: none;
   }
@@ -5797,6 +5836,10 @@ Start responsive
 }
 
 @media (max-width: 1490px) {
+  .footerTopLeftLogo {
+    margin-right: 2%;
+  }
+
   .aboutItem .ourProductSliderContent source,
   .aboutItem .ourProductSliderContent img {
     max-width: 100%;
@@ -6401,6 +6444,14 @@ Start responsive
 }
 
 @media (max-width: 1079px) {
+  .footerBottomRight__text {
+    bottom: 0;
+  }
+
+  .footerBottomIn {
+    max-width: 89%;
+  }
+
   .descriptionIn {
     left: 8%;
     max-width: 700px;
@@ -7066,6 +7117,18 @@ Start responsive
 }
 
 @media (max-width: 870px) {
+  .footerTopRight {
+    padding: 67px 25px;
+  }
+
+  .footerBottomRight__text {
+    bottom: -90px;
+  }
+
+  .footerTopRight:after {
+    bottom: -106px;
+  }
+
   .articleSlider .slick-next.slick-arrow, .articleSlider .slick-prev.slick-arrow {
     top: 240px;
   }
@@ -7608,7 +7671,7 @@ Start responsive
   }
 
   .footerBottomRight__text {
-    margin-left: 5%;
+    margin-left: 0;
   }
 
   .logo {
@@ -8470,6 +8533,15 @@ Start responsive
   .qualityMobilSlider {
     left: -49%;
   }
+
+  .footerBottomIn {
+    max-width: 96%;
+  }
+
+  .footerBottomLeftIn {
+    max-width: 331px;
+    margin-left: 19px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -8562,6 +8634,11 @@ Start responsive
 }
 
 @media (max-width: 400px) {
+  .footerBottomLeftIn {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
   .articleSlider .slick-next.slick-arrow {
     left: 83%;
   }
