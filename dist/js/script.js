@@ -456,8 +456,8 @@ $(document).ready(function () {
 
 
   // Start brand
-  const $ul = $('.flexic');
-  const wrapperHeight = $('.wrapper').height();
+   const $ul = $('.flexic');
+   const wrapperHeight = $('.wrapper').height();
 
 
   $ul.children().clone().appendTo($ul);

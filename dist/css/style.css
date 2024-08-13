@@ -220,16 +220,29 @@ Start header
 }
 
 .headerMenu {
-  max-width: 750px;
+  max-width: 758px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.headerMenu > li {
+  margin-right: 35px;
+}
+
+.headerMenu > li:last-of-type {
+  margin-right: 0;
 }
 
 .headerMenu li a {
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.headerMenu > li.headerMenuSub {
+  margin-right: 55px;
 }
 
 .headerMenu > li.headerMenuSub > a > span {
@@ -295,10 +308,12 @@ Start header
   justify-content: flex-end;
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   max-width: 210px;
   width: 100%;
   position: relative;
-  padding-right: 30px;
+  padding-right: 15px;
+  text-transform: uppercase;
 }
 
 .headerRight__phone:before {
@@ -325,7 +340,7 @@ Start header
   width: 100%;
   padding: 20px;
   position: absolute;
-  margin-top: 35px;
+  margin-top: 30px;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -884,6 +899,7 @@ Start productions
   color: rgba(78, 54, 57, 1);
   font: normal 500 38px 'Montserrat', sans-serif;
   margin-bottom: 10px;
+  margin-left: -1px;
 }
 
 .productions__title:before {
@@ -1405,9 +1421,11 @@ Start news
   font: normal 600 18px 'Montserrat', sans-serif;
   line-height: 24px;
   text-align: center;
-  margin-top: 14px;
   max-height: 50px;
   overflow: hidden;
+  max-width: 50%;
+  width: 100%;
+  margin: 6px auto 0;
 }
 
 .itemNavigation .swiper-button-next5,
@@ -1591,9 +1609,13 @@ Start weForm
   margin-left: 0;
 }
 .tab-container .weFormLeftInRight {
-  margin-top: 30px;
+  margin-top: 38px;
   margin-left: 0;
   max-width: 100%;
+}
+
+.tab-container .weFormLeftInRightSection {
+  margin-bottom: 15px;
 }
 
 .tab-container .weFormLeftInRightSection__input {
@@ -1836,6 +1858,7 @@ Start footer
 }
 
 .footerTopRightSocialUl li a {
+  transition: all, 0.5s;
   position: relative;
   width: 125px;
   height: 36px;
@@ -1846,6 +1869,10 @@ Start footer
   color: #ffffff;
   font: normal 500 14px 'Montserrat', sans-serif;
   padding-left: 35px;
+}
+
+.footerTopRightSocialUl li a:hover {
+  background: #87185A;
 }
 
 .footerTopRightSocial {
@@ -2115,8 +2142,6 @@ Start brends
 }
 
 .brendsScroll li {
-  max-width: 240px;
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2297,7 +2322,7 @@ Start bread
 .bread {
   max-width: 1600px;
   width: 100%;
-  margin: 20px auto 0;
+  margin: 17px auto 0;
 }
 
 .bread li span,
@@ -2306,9 +2331,15 @@ Start bread
   font: normal 500 14px 'Montserrat', sans-serif;
 }
 
+.bread li span {
+  color: #4E3639;
+}
+
+
 .bread li a:after {
   content: " | ";
-  margin: 0 6px 0 3px;
+  margin: 0 11px 0 8px;
+  color: #4E3639;
 }
 
 /*
@@ -2438,6 +2469,7 @@ Start contactMap
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
   letter-spacing: 1px;
+  opacity: .8;
 }
 
 .contactMapContentLeft__address {
@@ -2477,6 +2509,7 @@ Start contactMap
   letter-spacing: 1px;
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
+  opacity: .8;
 }
 
 .contactMapContentRight__tel {
@@ -2551,6 +2584,7 @@ Start article
 .articleAsideUsRight {
   max-width: 240px;
   width: 100%;
+  margin-left: 24px;
 }
 
 .articleAsideUsRight__name {
@@ -2566,7 +2600,6 @@ Start article
 }
 
 .articleAsideUs {
-  justify-content: space-between;
   border-bottom: 1px solid #eae7e7;
   padding-bottom: 20px;
   margin-bottom: 40px;
@@ -2768,13 +2801,14 @@ End article
   justify-content: space-between;
   background: #ffffff;
   height: 56px;
-  border-radius: 8px;
+  border-radius: 6px;
   align-items: center;
   padding: 0 5px;
 }
 
 .etabs li a {
   color: #4E3639;
+  border-radius: 6px;
   font: normal 600 14px 'Montserrat', sans-serif;
   height: 45px;
   display: -webkit-box;
@@ -2790,7 +2824,7 @@ End article
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  padding: 0 25px;
+  padding: 0 34px;
 }
 
 .tab-container {
@@ -2807,6 +2841,21 @@ End article
 
 .etabs li.tab {
   position: relative;
+}
+
+.etabs li.tab:after {
+  content: "";
+  display: block;
+  height: 24px;
+  width: 1px;
+  background: rgba(78, 54, 57, .2);
+  position: absolute;
+  top: 11px;
+  right: -40px;
+}
+
+.etabs li.tab:last-of-type:after {
+  display: none;
 }
 
 .titleSectionRight__planshet,
@@ -2937,6 +2986,7 @@ Start allCatalog
   text-transform: uppercase;
   margin-left: 32px;
   margin-top: 12px;
+  opacity: .6;
 }
 
 .allCatalogContent .slick-next,
@@ -3053,6 +3103,7 @@ Start allCatalog
   text-transform: uppercase;
   color: #4E3639;
   font: normal 600 13px 'Montserrat', sans-serif;
+  opacity: .6;
   border-bottom: 1px solid;
   margin-left: 30px;
   margin-top: 6px;
@@ -3166,11 +3217,12 @@ Start allCatalog
 }
 
 .allCatalogRightFilterCheckbox .input-row {
-  margin: 0 10px 0 0;
+  margin: 0 8px 0 0;
 }
 
 .metismenuIn {
   margin-left: 45px;
+  margin-top: 15px;
 }
 
 .metismenuIn .input-row {
@@ -3291,12 +3343,12 @@ Start ourProduct
 }
 
 .ourProductSliderNav .swiper-button-next4 {
-  right: -104px;
+  right: -87px;
   top: -10px;
 }
 
 .ourProductSliderNav .swiper-button-prev4 {
-  right: -54px;
+  right: -40px;
   top: -10px;
   transform: rotate(180deg);
 }
@@ -3331,7 +3383,7 @@ Start blogMain
 
 .blogContent {
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding-bottom: 50px;
   margin-top: 24px;
 }
@@ -3418,11 +3470,11 @@ Start blogMain
 }
 
 .ms-drop ul > li {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .ms-drop ul {
-  padding: 10px !important;
+  padding: 10px 10px 5px !important;
 }
 
 .ms-drop ul > li.hide-radio.selected {
@@ -3434,7 +3486,7 @@ Start blogMain
   max-width: 100%;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .blogContentHorizont {
@@ -3649,7 +3701,6 @@ Start item
 
 .itemRightValue {
   margin-top: 25px;
-  justify-content: space-between;
 }
 
 .itemRightValue li {
@@ -3659,6 +3710,7 @@ Start item
   border-radius: 10px;
   height: 77px;
   padding: 16px;
+  margin-right: 4px;
 }
 
 .itemRightValue__bold {
@@ -4517,7 +4569,7 @@ End document
 }
 
 .popupItemcareerLoad {
-  background: rgba(249, 249, 249, 1);
+  background: #F9F9F9;
   position: relative;
   height: 96px;
   border: 1px dashed rgba(0, 0, 0, 0.24);
@@ -4815,7 +4867,7 @@ Start sertificate
   border-radius: 6px;
   padding: 8px 12px;
   border: 1px solid rgba(78, 54, 57, 0.24);
-  margin-right: 15px;
+  margin-right: 8px;
   color: #4E3639;
   font: normal 600 14px 'Montserrat', sans-serif;
 }
@@ -4977,7 +5029,7 @@ End sertificate
   color: #ffffff;
   border: 1px solid #ffffff;
   width: 1px;
-  height: 11px;
+  height: 13px;
   display: block;
   position: absolute;
   left: 0;
@@ -4999,6 +5051,8 @@ End sertificate
 .swiper-pagination span {
   font-size: 16px;
   margin: 0 15px;
+  color: #4E3639;
+  font-weight: 500;
 }
 
 .swiper-pagination3 span {
@@ -5041,11 +5095,11 @@ End sertificate
 
 .newsSlider .multiple-items .slick-prev.slick-arrow {
   background: #F0F0F0 url('../images/icon5.svg') no-repeat center;
-  right: 250px;
+  right: 242px;
 }
 
 .news .multiple-items .slick-next.slick-arrow {
-  right: 227px;
+  right: 231px;
 }
 
 .news .multiple-items .slick-prev.slick-arrow {
@@ -5187,7 +5241,7 @@ End sertificate
 
 .headerMenuSubInSec {
   justify-content: flex-end;
-  max-width: 1340px;
+  max-width: 1345px;
   width: 100%;
 }
 
@@ -5267,7 +5321,8 @@ End sertificate
 
 .flexic li {
   flex-shrink: 0;
-  margin-right: 0;
+  margin-right: 110px;
+  justify-content: flex-start;
 }
 
 @keyframes scroll {
@@ -5296,6 +5351,31 @@ End sertificate
   align-items: center;
 }
 
+.swiper-pagination4 {
+  position: relative;
+  left: -13px !important;
+  top: -19px !important;
+}
+
+.ourProductSliderNav .swiper-button-prev4 {
+  top: -30px;
+}
+
+.ourProductSliderNav .swiper-button-next4 {
+  top: -30px;
+}
+
+.navigation .navigation__btn:before {
+  left: -5px;
+}
+
+.article__text2 {
+  color: rgba(78, 54, 57, 0.8);
+  margin-top: 0;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
 /*
 Start responsive
 ################*/
@@ -5303,11 +5383,20 @@ Start responsive
   .historySliderNav {
     margin: -55px 0 0 250px;
   }
+
+  .headerMenuSubInSec {
+    max-width: 1456px;
+  }
 }
 
 @media (min-width: 2390px) {
   .historySliderNav {
     margin: -55px 0 0 315px;
+  }
+
+  .headerMenuSubInSec {
+    max-width: 1350px;
+    margin: 0 242px 0 0;
   }
 }
 
@@ -6286,15 +6375,6 @@ Start responsive
     width: 100%;
   }
 
-  .newsSliderItemBottom__paragraf {
-    font-size: 15px;
-  }
-
-  .newsSliderItemBottom__data li a,
-  .newsSliderItemBottom__data li span {
-    font-size: 12px;
-  }
-
   .description {
     background-position: -36px 0;
   }
@@ -6755,15 +6835,6 @@ Start responsive
 
   .headerMenu {
     max-width: 78%;
-  }
-
-  .newsSliderItemBottom__data li a,
-  .newsSliderItemBottom__data li span {
-    font-size: 11px;
-  }
-
-  .newsSliderItemBottom__paragraf {
-    font-size: 14px;
   }
 
   .description {
