@@ -2657,7 +2657,7 @@ Start article
 .article__title2 {
   color: #4E3639;
   font: normal 500 32px 'Montserrat', sans-serif;
-  margin: 60px 0 40px;
+  margin: 45px 0 27px;
 }
 
 .article__title3 {
@@ -2669,7 +2669,7 @@ Start article
   color: #4E3639;
   font: normal normal 16px 'Montserrat', sans-serif;
   line-height: 24px;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .article__title3.border:before {
@@ -2678,8 +2678,8 @@ Start article
   height: 2px;
   background: #4E3639;
   display: block;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 62px;
+  margin-bottom: 20px;
 }
 
 .article__text2 {
@@ -2738,7 +2738,7 @@ Start article
 .articleList li span {
   color: #4E3639;
   font: normal normal 16px 'Montserrat', sans-serif;
-  max-width: 98%;
+  max-width: 97.6%;
   width: 100%;
   line-height: 24px;
 }
@@ -2751,7 +2751,7 @@ Start article
   background: #4E3639;
   border-radius: 100px;
   position: relative;
-  top: 5px;
+  top: 8px;
 }
 
 .article__text span {
@@ -2769,6 +2769,7 @@ Start article
 
 .articleSlider {
   margin-bottom: 100px;
+  margin-top: 10px;
 }
 
 .articleSlider source,
@@ -5372,8 +5373,26 @@ End sertificate
 .article__text2 {
   color: rgba(78, 54, 57, 0.8);
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 50px;
   margin-bottom: 20px;
+}
+
+.articleImg {
+  margin-top: -20px;
+}
+
+.article__text_modif {
+  color: rgba(78, 54, 57, 0.8);
+  margin-bottom: 45px;
+}
+
+.article__title4_modif {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.article__text_modif {
+  padding-top: 0;
 }
 
 /*
