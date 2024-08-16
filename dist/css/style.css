@@ -5573,6 +5573,10 @@ End sertificate
   position: relative;
 }
 
+.weForm {
+
+}
+
 /*
 Start responsive
 ################*/
@@ -5738,6 +5742,7 @@ Start responsive
 @media (max-width: 1750px) {
   .weFormLeft {
     max-width: 75%;
+    padding-bottom: 50px;
   }
 
   .weFormRight {
@@ -6668,8 +6673,12 @@ Start responsive
   }
 
   .productions2:before {
-    height: 433px;
-    bottom: 100px;
+    height: 306px;
+    bottom: 2px;
+  }
+
+  .productions2 {
+    padding-bottom: 120px;
   }
 
   .itemRightDesc {
@@ -7595,6 +7604,14 @@ Start responsive
 }
 
 @media (max-width: 870px) {
+  .productions__center {
+    font-size: 24px;
+  }
+
+  .productionsNav {
+    margin-top: 110px;
+  }
+
   .etabs li a{
     padding: 0 9px;
   }
@@ -7892,10 +7909,16 @@ Start responsive
     margin-left: 0;
   }
 
-
+  .swiper-button-prev2 {
+    right: 21%;
+  }
 }
 
 @media (max-width: 800px) {
+  .weFormLeftInRight {
+    max-width: 60%;
+  }
+
   .ourProductSlider .ourProductSliderContentImg {
     height: 305px;
   }
@@ -8325,7 +8348,7 @@ Start responsive
   }
 
   .weFormLeft {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .weFormLeftInRight {
@@ -8368,10 +8391,11 @@ Start responsive
 
   .productionsRight {
     top: 240px;
+    right: 2px;
   }
 
   .productionsRightSlider {
-    left: 3%;
+    left: 2.9%;
   }
 
   .mySwiper2ContentRight {
@@ -8698,6 +8722,19 @@ Start responsive
 }
 
 @media (max-width: 580px) {
+  .swiperNavigation2 {
+    max-width: 100%;
+  }
+
+  .swiper-pagination2 {
+    left: -19px !important;
+    width: 92px !important;
+  }
+
+  .swiper-button-prev2 {
+    right: 8.8%;
+  }
+
   .weForm .weFormLeftInRightSectionBottom{
     margin-top: 10px;
   }
@@ -9289,7 +9326,7 @@ Start responsive
 
   .news2 .newsSliderTitle {
     max-width: 92%;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .new2 .newsSlider .multiple-items .slick-next.slick-arrow {
@@ -9334,6 +9371,11 @@ Start responsive
   .news .multiple-items .slick-prev.slick-arrow {
     top: -28px;
     right: 18%;
+  }
+
+  .news2 .multiple-items .slick-next.slick-arrow,
+  .news2 .multiple-items .slick-prev.slick-arrow {
+    top: -20px;
   }
 
   .weFormLeftInRightSection__input:hover input[type="text"]::-moz-placeholder {
@@ -9602,6 +9644,10 @@ Start responsive
 }
 
 @media (max-width: 560px) {
+  .swiper-button-prev2 {
+    right: 9%;
+  }
+
   .ourProductSlider .ourProductSliderContentImg {
     height: 530px;
   }
@@ -9625,6 +9671,10 @@ Start responsive
 }
 
 @media (max-width: 525px) {
+  .swiper-button-prev2 {
+    right: 45px;
+  }
+
   .multiple-items2 {
     left: -300px;
   }
@@ -9749,6 +9799,9 @@ Start responsive
 }
 
 @media (max-width: 475px) {
+  .swiper-button-prev2 {
+
+  }
   .ourProduct:after {
     bottom: 4px;
   }
