@@ -275,7 +275,7 @@ $(document).ready(function () {
   $(window).on('scroll', function() {
     const scrollPosition = $(window).scrollTop();
 
-    if (scrollPosition > 50) {
+    if (scrollPosition > 5) {
       $('.filterMobilFilter').addClass('active');
     } else {
       $('.filterMobilFilter').removeClass('active');

@@ -473,7 +473,7 @@ Start catalog
   font: normal 600 13px 'Montserrat', sans-serif;
   align-items: center;
   justify-content: space-between;
-  padding-left: 7px;
+  padding-left: 6px;
   padding-right: 12px;
   margin-top: 50px;
   letter-spacing: 1px;
@@ -610,9 +610,9 @@ Start our
 
 .mySwiper2ContentLeftListText {
   position: absolute;
-  top: 40px;
+  top: 60px;
   right: 0;
-  max-width: 470px;
+  max-width: 440px;
   width: 100%;
   height: 225px;
 }
@@ -1526,22 +1526,22 @@ Start weForm
 .weForm {
   max-width: 100%;
   width: 100%;
-  height: 740px;
+  min-height: 60%;
   overflow: hidden;
+  align-items: stretch;
 }
 
 .weFormRight source,
 .weFormRight img {
   width: 100%;
   object-fit: cover;
-  height: 740px;
   transform: scale(1.1);
+  height: 100%;
 }
 
 .weFormLeft {
   background: rgba(250, 236, 220);
-  height: 100%;
-  max-width: 70%;
+  max-width: 72.7%;
   width: 100%;
   justify-content: flex-end;
 }
@@ -1600,7 +1600,7 @@ Start weForm
 .weFormLeftInRight {
   max-width: 670px;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 7px;
   margin-left: 2%;
 }
 
@@ -1608,10 +1608,12 @@ Start weForm
   max-width: 100%;
   margin-left: 0;
 }
+
 .tab-container .weFormLeftInRight {
   margin-top: 38px;
   margin-left: 0;
   max-width: 100%;
+  padding-bottom: 70px;
 }
 
 .tab-container .weFormLeftInRightSection {
@@ -1711,7 +1713,7 @@ Start weForm
   background: url(../images/icon4.svg) no-repeat center;
   width: 34px;
   height: 34px;
-  margin-left: 7px;
+  margin-left: 6px;
   transition: all, 0.5s;
 }
 
@@ -2773,6 +2775,10 @@ Start article
   margin-top: 10px;
 }
 
+.articleContentLeft .articleSlider {
+  margin-bottom: 50px;
+}
+
 .articleSlider source,
 .articleSlider img {
   height: 480px;
@@ -2812,7 +2818,7 @@ End article
   color: #4E3639;
   border-radius: 6px;
   font: normal 600 14px 'Montserrat', sans-serif;
-  height: 45px;
+  height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2834,6 +2840,20 @@ End article
   width: 100%;
 }
 
+.weForm .tab-container {
+  max-width: 610px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.weForm .tab-container .weFormLeftInRightSectionBottom {
+  margin-top: 40px;
+}
+
+.weForm .weFormLeftInRightSectionBottom {
+
+}
+
 .etabs li a.active {
   background: #A82783;
   border-radius: 5px;
@@ -2853,7 +2873,7 @@ End article
   background: rgba(78, 54, 57, .2);
   position: absolute;
   top: 11px;
-  right: -40px;
+  right: -25px;
 }
 
 .etabs li.tab:last-of-type:after {
@@ -3310,7 +3330,7 @@ Start ourProduct
 
 .ourProductSliderContent {
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .ourProductSliderContent .productionsLeft {
@@ -3323,17 +3343,11 @@ Start ourProduct
 
 .ourProductSlider source,
 .ourProductSlider img {
-  height: 800px;
   object-fit: cover;
 }
 
 .ourProductSlider .productions__paragraf {
   max-height: 170px;
-  overflow: hidden;
-}
-
-.ourProductSlider .productions__center {
-  max-height: 65px;
   overflow: hidden;
 }
 
@@ -3678,13 +3692,17 @@ Start item
 }
 
 .itemRightDesc {
-  justify-content: space-between;
   margin-top: 30px;
 }
 
 .itemRightDescList {
   max-width: 240px;
   width: 100%;
+  margin-right: 25px;
+}
+
+.itemRightDescList:last-of-type {
+  margin-right: 0;
 }
 
 .itemRightDescList li {
@@ -3704,18 +3722,22 @@ Start item
 
 .itemRightValue {
   margin-top: 25px;
-  max-width: 520px;
+  max-width: 530px;
   width: 100%;
 }
 
 .itemRightValue li {
-  max-width: 120px;
+  max-width: 127px;
   width: 100%;
   background: #F0F0F0;
   border-radius: 10px;
   height: 77px;
   padding: 16px;
   margin-right: 4px;
+}
+
+.itemRightValue li:last-of-type {
+  margin-right: 0;
 }
 
 .itemRightValue__bold {
@@ -3936,7 +3958,7 @@ Start filterMobil
   color: #ffffff;
   letter-spacing: 1px;
   position: fixed;
-  top: 100px;
+  top: 580px;
   right: 3%;
   z-index: 999999999;
 }
@@ -5132,6 +5154,16 @@ End sertificate
   right: 231px;
 }
 
+.new .newsSlider .multiple-items .slick-next.slick-arrow {
+  background: #ffffff url('../images/icon5.svg') no-repeat center;
+  right: 183px;
+}
+
+.new .newsSlider .multiple-items .slick-prev.slick-arrow {
+  background: #ffffff url('../images/icon5.svg') no-repeat center;
+  right: 231px;
+}
+
 .news .multiple-items .slick-next.slick-arrow {
   right: 231px;
 }
@@ -5418,15 +5450,12 @@ End sertificate
 .article__text_modif {
   color: rgba(78, 54, 57, 0.8);
   margin-bottom: 45px;
+  margin-top: 0px;
 }
 
 .article__title4_modif {
   margin-top: 24px;
-  margin-bottom: 16px;
-}
-
-.article__text_modif {
-  padding-top: 0;
+  margin-bottom: 0;
 }
 
 .newsBtnMobil {
@@ -5499,9 +5528,49 @@ End sertificate
 
 .weFormRight {
   overflow: hidden;
-  max-width: 30%;
+  max-width: 27.3%;
   width: 100%;
-  height: 740px;
+
+}
+
+.allCatalog .navigation {
+  margin-top: 30px;
+}
+
+.mySwiper2ContentLeftList__mobil,
+.mySwiper2ContentLeftList__planshet {
+  display: none;
+}
+
+.swiperOur .mySwiperContentLeft__btn {
+  bottom: 30px;
+}
+
+.swiperOur .mySwiper2ContentLeftListText__modif .mySwiperContentLeft__btn {
+  bottom: 10px;
+}
+
+.ourProductSliderContentImg {
+  justify-content: center;
+  align-items: center;
+  max-width: 733px;
+  width: 100%;
+  height: 800px;
+  background: #FFE9ED;
+  position: relative;
+  overflow: hidden;
+}
+
+.ourProductSliderContentImg__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.ourProductSliderContentImg picture {
+  position: relative;
 }
 
 /*
@@ -5978,6 +6047,14 @@ Start responsive
 }
 
 @media (max-width: 1540px) {
+  .mySwiper2ContentLeftListText {
+    max-width: 320px;
+  }
+
+  .mySwiper2ContentLeftListText__modif {
+    max-width: 95%;
+  }
+
   .footerBottomIn {
     max-width: 93.6%;
   }
@@ -6032,7 +6109,6 @@ Start responsive
 
   .weFormLeftIn {
     justify-content: space-between;
-    padding-right: 3%;
   }
 
   .productionsRightSlider {
@@ -6061,6 +6137,16 @@ Start responsive
 }
 
 @media (max-width: 1490px) {
+  .ourProductSliderNav {
+    bottom: 200px;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg picture {
+    max-width: 79%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .footerTopLeftLogo {
     margin-right: 2%;
   }
@@ -6171,13 +6257,13 @@ Start responsive
     width: 100%;
   }
 
-  .ourProductSliderContent picture {
-    max-width: 50%;
-    width: 100%;
-  }
-
   .ourProductSliderContent .productionsLeft {
     max-width: 45%;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 650px;
+    height: 700px;
   }
 }
 
@@ -6307,10 +6393,6 @@ Start responsive
     width: 100%;
   }
 
-  .etabs li a {
-    padding: 0 17px;
-  }
-
   .productionsLeft {
     max-width: 31%;
   }
@@ -6325,10 +6407,6 @@ Start responsive
 
   .brendsScroll a {
     margin-right: 1%;
-  }
-
-  .productions__center {
-    font-size: 22px;
   }
 
   .productions__title {
@@ -6396,6 +6474,27 @@ Start responsive
 }
 
 @media (max-width: 1280px) {
+  .weForm .tab-container {
+    max-width: 52%;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg {
+    max-width: 50%;
+    height: 640px;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 55%;
+  }
+
+  .mySwiper2ContentLeftListText {
+    top: 30px;
+  }
+
+  .swiperOur .mySwiperContentLeft__btn {
+    bottom: -32px;
+  }
+
   .historySliderRight {
     display: none;
   }
@@ -6526,10 +6625,6 @@ Start responsive
     height: 140px;
   }
 
-  .mySwiper2ContentLeftListText__title {
-    font-size: 33px;
-  }
-
   .mySwiper2ContentLeftList li source,
   .mySwiper2ContentLeftList li img {
     height: 232px;
@@ -6596,6 +6691,16 @@ Start responsive
 }
 
 @media (max-width: 1210px) {
+  .ourProductSliderContentImg {
+    height: 650px;
+  }
+
+  .aboutItem .ourProductSliderContentImg picture {
+    max-width: 70%;
+    margin: 0 auto;
+
+  }
+  
   .ourProductSlider {
     height: 800px;
     margin-bottom: 0;
@@ -6636,7 +6741,35 @@ Start responsive
   }
 }
 
+@media (max-width: 1170px) {
+  .etabs li.tab:after {
+    right: -17px;
+  }
+
+  .weForm .tab-container {
+    margin-left: 0;
+    max-width: 56%;
+  }
+
+  .ourProductSliderContent .productionsLeft {
+    padding-bottom: 60px;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg picture {
+    max-width: 70%;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 530px;
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 1150px) {
+  .ourProductSliderContentImg {
+    height: 580px;
+  }
+
   .cooperation {
     margin-top: 200px;
   }
@@ -6700,6 +6833,14 @@ Start responsive
 }
 
 @media (max-width: 1079px) {
+  .mySwiper2ContentLeftListText__title {
+    font-size: 30px;
+  }
+
+  .swiperOur .mySwiperContentLeft__btn {
+    bottom: -10px;
+  }
+
   .document .career__img {
     margin-top: 192px;
   }
@@ -6763,7 +6904,7 @@ Start responsive
   }
 
   .itemRightDescList {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .itemRightValue li:last-of-type {
@@ -6794,7 +6935,7 @@ Start responsive
   }
 
   .ourProductSliderNav {
-    bottom: 129px;
+    bottom: 160px;
   }
 
   .articleImg source, .articleImg img {
@@ -6870,6 +7011,19 @@ Start responsive
 }
 
 @media (max-width: 1090px) {
+  .etabs li a {
+    padding: 0 26px;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 420px;
+    max-width: 39%;
+  }
+
+  .ourProductSliderNav {
+    bottom: 110px;
+  }
+
   .ourProductSlider {
     height: 590px;
   }
@@ -7000,10 +7154,6 @@ Start responsive
     margin: 0 1%;
   }
 
-  .mySwiper2ContentLeftListText__title {
-    font-size: 28px;
-  }
-
   .mySwiper2ContentLeftList li source,
   .mySwiper2ContentLeftList li img {
     height: 199px;
@@ -7098,12 +7248,29 @@ Start responsive
 }
 
 @media (max-width: 990px) {
+  .weFormLeftInLeft {
+    max-width: 37%;
+  }
+
+  .weForm .tab-container {
+    max-width: 62%;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 365px;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 45%;
+    height: 447px;
+  }
+
   .mySwiper2ContentLeftListText {
-    max-width: 225px;
+    max-width: 240px;
   }
 
   .mySwiper2ContentLeftListText__modif {
-    max-width: 90%;
+    max-width: 94%;
   }
 
   .newsSliderItem {
@@ -7130,7 +7297,7 @@ Start responsive
   }
 
   .aboutItem .ourProductSliderContent .productionsLeft {
-    max-width: 56%;
+    max-width: 46%;
   }
 
   .historySliderRight {
@@ -7236,14 +7403,6 @@ Start responsive
 
   .productionsLeft {
     max-width: 45%;
-  }
-
-  .productions__title {
-    font-size: 28px;
-  }
-
-  .productions__center {
-    font-size: 18px;
   }
 
   .productionsRightSlider source,
@@ -7424,7 +7583,27 @@ Start responsive
   }
 }
 
+@media (max-width: 890px) {
+  .ourProductSliderContentImg {
+    max-width: 43%;
+    height: 390px;
+  }
+
+  .cooperation {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 870px) {
+  .etabs li a{
+    padding: 0 9px;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 40%;
+    height: 338px;
+  }
+
   .quality {
     margin-bottom: 150px;
     height: 660px;
@@ -7631,7 +7810,7 @@ Start responsive
   .ourProductSliderNav {
     right: 44.5%;
     left: auto;
-    bottom: 100px;
+    bottom: 85px;
   }
 
   .qualityMobil {
@@ -7717,6 +7896,27 @@ Start responsive
 }
 
 @media (max-width: 800px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 305px;
+  }
+
+  .ourProductSliderNav {
+    bottom: 70px;
+  }
+
+  .titleSectionLeft, .titleSectionRight {
+    height: 220px;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 40%;
+    height: 310px;
+  }
+
+  .productions__center {
+    margin-top: 30px;
+  }
+
   .newsSliderItem__img source, .newsSliderItem__img img {
     height: 300px;
   }
@@ -7767,6 +7967,40 @@ Start responsive
 }
 
 @media (max-width: 750px) {
+  .weFormLeftInLeft {
+    height: auto;
+  }
+
+  .weForm .tab-container {
+    max-width: 100%;
+    margin-top: 150px;
+  }
+
+  .etabs li a {
+    padding: 0 45px;
+  }
+
+  .mySwiper2ContentLeftListText {
+    top: 60px;
+    margin-right: 30px;
+  }
+
+  .mySwiper2ContentLeftList__desc {
+    display: none;
+  }
+
+  .mySwiper2ContentLeftList__planshet {
+    display: block;
+  }
+
+  .mySwiper2ContentLeftListText .mySwiperContentLeft__btn {
+    bottom: -60px;
+  }
+
+  .swiperOur .swiper-slide {
+    margin-right: 1px;
+  }
+
   .qualityMobilSlider {
     left: -30%;
   }
@@ -8058,7 +8292,7 @@ Start responsive
   }
 
   .titleSectionLeft__title {
-    margin: 90px 0 0 60px;
+    margin: 90px 0 0 50px;
   }
 
   .politic__title {
@@ -8091,7 +8325,7 @@ Start responsive
   }
 
   .weFormLeft {
-    padding-bottom: 100px;
+    padding-bottom: 0;
   }
 
   .weFormLeftInRight {
@@ -8150,7 +8384,7 @@ Start responsive
 
   .mySwiper2ContentLeftList li source,
   .mySwiper2ContentLeftList li img {
-    height: 250px;
+    height: 300px;
   }
 
   .swiperNavigation {
@@ -8193,7 +8427,7 @@ Start responsive
   }
 
   .itemRightDescList {
-    max-width: 250px;
+    max-width: 232px;
   }
 
   .careerLeft__title {
@@ -8226,12 +8460,28 @@ Start responsive
 }
 
 @media (max-width: 710px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 270px;
+  }
+
   .qualityMobilSlider {
     left: -33%;
+  }
+
+  .ourProductSliderContentImg {
+    height: 280px;
   }
 }
 
 @media (max-width: 680px) {
+  .etabs li a {
+    padding: 0 33px;
+  }
+
+  .mySwiper2ContentLeftListText {
+    margin-right: 10px;
+  }
+
   .allCatalogRightFilterCheckbox {
     width: 900px !important;
     overflow: scroll;
@@ -8312,8 +8562,11 @@ Start responsive
   }
 
   .productions__center {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .productions__title {
+    font-size: 26px;
   }
 
   .articleAsideUs {
@@ -8335,8 +8588,17 @@ Start responsive
 }
 
 @media (max-width: 620px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 240px;
+  }
+
+  .ourProductSliderContentImg {
+    height: 249px;
+  }
+
   .ourProductSliderNav {
     right: 41%;
+    bottom: 98px;
   }
 
   .news .multiple-items .slick-next.slick-arrow {
@@ -8348,7 +8610,7 @@ Start responsive
   }
 
   .productionsRightSection {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .qualityMobilSlider {
@@ -8403,7 +8665,7 @@ Start responsive
   }
 
   .titleSectionLeft__title {
-    margin: 66px 0 0 60px;
+    margin: 66px 0 0 40px;
   }
 }
 
@@ -8436,8 +8698,46 @@ Start responsive
 }
 
 @media (max-width: 580px) {
-  .news3 {
+  .weForm .weFormLeftInRightSectionBottom{
+    margin-top: 10px;
+  }
+
+  .tab-container .weFormLeftInRight {
+    padding-bottom: 40px;
+  }
+
+  .ourProductSlider .ourProductSliderContentImg {
+    max-width: 100%;
+    height: 586px;
+  }
+
+  .ourProductSliderContentImg {
+    max-width: 280px;
+    height: 305px;
+  }
+
+  .multiple-items {
+    margin-top: 40px;
+  }
+
+  .new {
     margin-top: 60px;
+  }
+
+  .mySwiper2ContentLeftList li {
+    margin-bottom: 6px;
+  }
+
+  .mySwiper2ContentLeftList__planshet {
+    display: none;
+  }
+
+  .mySwiper2ContentLeftList__mobil {
+    display: block;
+  }
+
+  .news3 {
+    margin-top: 100px;
   }
 
   .fadeUpBlockSec {
@@ -8518,8 +8818,8 @@ Start responsive
     flex-direction: column;
   }
 
-  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
-    max-width: 77%;
+  .history {
+    margin-bottom: 60px;
   }
 
   .aboutItem .ourProductSliderContent .productionsLeft {
@@ -8685,9 +8985,18 @@ Start responsive
     margin: 0 auto;
   }
 
+  .ourProduct:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: 0px;
+  }
+
   .ourProductSliderContent picture {
     padding-bottom: 50px;
-    border-bottom: 1px solid #d6d6d6;
   }
 
   .quality__title {
@@ -8863,15 +9172,17 @@ Start responsive
 
   .newIn .mySwiperContentLeft__btn {
     position: relative;
-    right: 0;
+    right: -1px;
   }
 
-  .newsSlider .multiple-items .slick-next.slick-arrow {
+  .new .newsSlider .multiple-items .slick-next.slick-arrow {
     right: 0;
+    top: -93px;
   }
 
-  .newsSlider .multiple-items .slick-prev.slick-arrow {
+  .new .newsSlider .multiple-items .slick-prev.slick-arrow {
     right: 49px;
+    top: -93px;
   }
 
   .new2 .mySwiperContentLeft__btn {
@@ -8889,8 +9200,12 @@ Start responsive
 
   .mySwiper2ContentLeftListText {
     height: 130px;
-    top: 30px;
-    max-width: 210px;
+    top: 50px;
+    max-width: 220px;
+  }
+
+  .mySwiper2ContentLeftListText .mySwiperContentLeft__btn {
+    bottom: -20px;
   }
 
   .mySwiper2ContentLeftList li source,
@@ -8909,7 +9224,7 @@ Start responsive
   }
 
   .swiperNavigation {
-    left: 18%;
+    left: 17%;
     bottom: 10%;
   }
 
@@ -8961,14 +9276,20 @@ Start responsive
   }
 
   .newsSliderTitle {
-    max-width: 96%;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     position: relative;
+    margin-left: 3px;
+  }
+
+  .news__title {
+    padding-left: 0;
   }
 
   .news2 .newsSliderTitle {
     max-width: 92%;
+    margin-left: 10px;
   }
 
   .new2 .newsSlider .multiple-items .slick-next.slick-arrow {
@@ -9112,6 +9433,7 @@ Start responsive
 
   .footerTopLeft {
     height: auto;
+    padding-bottom: 10px;
   }
 
   .footerTopLeftMenu {
@@ -9261,7 +9583,7 @@ Start responsive
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     position: absolute;
-    left: 4%;
+    left: 2%;
     top: 9%;
   }
 
@@ -9273,9 +9595,17 @@ Start responsive
   .aboutImgList {
     margin: 100px auto 0;
   }
+
+  .aboutImg .aboutImgList {
+    margin: 60px auto 0;
+  }
 }
 
 @media (max-width: 560px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 530px;
+  }
+
   .qualityMobilSlider {
     left: -39%;
   }
@@ -9287,6 +9617,10 @@ Start responsive
 
   .news .multiple-items .slick-next.slick-arrow {
     right: 15%;
+  }
+
+  .newsArticle {
+    margin-top: 80px;
   }
 }
 
@@ -9319,9 +9653,29 @@ Start responsive
   .news .multiple-items .slick-next.slick-arrow {
     right: 20%;
   }
+
+  .articleAsideUsRight {
+    max-width: 76%;
+  }
 }
 
 @media (max-width: 500px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 477px;
+  }
+
+  .ourProductSliderNav {
+    bottom: -27px;
+  }
+
+  .ourProduct:after {
+    bottom: 47px;
+  }
+
+  .swiperNavigation {
+    left: 16%;
+  }
+
   .blogContent .newsSliderItem__img source,
   .blogContent .newsSliderItem__img img,
   .blogContent .newsSliderItem__img {
@@ -9395,6 +9749,14 @@ Start responsive
 }
 
 @media (max-width: 475px) {
+  .ourProduct:after {
+    bottom: 4px;
+  }
+
+  .ourProductSliderNav {
+    bottom: -80px;
+  }
+
   .allCatalogRightFilterFormSelect {
     max-width: 100%;
     width: 100%;
@@ -9513,10 +9875,6 @@ Start responsive
     position: relative;
   }
 
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 400px !important;
-  }
-
   .navigation__btn {
     max-width: 250px;
     font-size: 15px;
@@ -9524,6 +9882,10 @@ Start responsive
   }
 
   .blogMain .navigation__btn {
+    margin: 0 auto;
+  }
+
+  .allCatalog .navigation__btn {
     margin: 0 auto;
   }
 
@@ -9552,6 +9914,14 @@ Start responsive
 }
 
 @media (max-width: 430px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 424px;
+  }
+
+  .newsSliderTitle {
+    margin-left: 3px;
+  }
+
   .multiple-items2 {
     left: -345px;
   }
@@ -9600,6 +9970,7 @@ Start responsive
 }
 
 @media (max-width: 405px) {
+
   .qualityMobilSlider {
     left: -75%;
   }
@@ -9617,13 +9988,18 @@ Start responsive
     left: -110px;
     position: relative;
   }
-
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 370px !important;
-  }
 }
 
 @media (max-width: 390px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 380px;
+  }
+
+  .articleAsideUsRight {
+    max-width: 76%;
+    margin-left: 20px;
+  }
+
   .news .multiple-items .slick-next.slick-arrow,
   .news .multiple-items .slick-prev.slick-arrow {
     right: 47%;
@@ -9637,19 +10013,11 @@ Start responsive
     left: -120px;
     position: relative;
   }
-
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 370px !important;
-  }
-
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 360px !important;
-  }
 }
 
 @media (max-width: 400px) {
   .productionsRightSection {
-    margin-top: 60px !important;
+    margin-top: 40px !important;
   }
 
   .ideaList__title {
@@ -9695,14 +10063,6 @@ Start responsive
 }
 
 @media (max-width: 380px) {
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 350px !important;
-  }
-
-  .blogTop .ms-choice > div.icon-caret {
-    right: 27% !important;
-  }
-
   .newsBtn {
     max-width: 170px;
     font-size: 9px;
@@ -9722,6 +10082,9 @@ Start responsive
 }
 
 @media (max-width: 370px) {
+  .articleAsideUsRight {
+    max-width: 70%;
+  }
   .multiple-items2 {
     left: -378px;
   }
@@ -9744,6 +10107,10 @@ Start responsive
 }
 
 @media (max-width: 360px) {
+  .ourProductSlider .ourProductSliderContentImg {
+    height: 350px;
+  }
+
   .news .multiple-items .slick-next.slick-arrow,
   .news .multiple-items .slick-prev.slick-arrow {
     right: 53%;
@@ -9756,10 +10123,6 @@ Start responsive
   .mobilScroll .multiple-items .slick-dots {
     left: -140px;
     position: relative;
-  }
-
-  .blogTop .allCatalogRightFilterFormSelect .ms-parent {
-    width: 320px !important;
   }
 }
 
