@@ -394,10 +394,15 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  const sertificateSliderNavCountAnimate = $('.js-sertificateSliderNavCountAnimate');
+  const sertificateSliderBlockAnimation = $('.js-sertificateSliderBlockAnimation');
+  const sertificateRightContentsSection = $('.js-sertificateRightContentsSection');
 
   const sertificateSlider = new Swiper(".sertificateSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
+    allowTouchMove: true,
+    speed: 1100,
     pagination: {
       el: ".swiper-pagination6",
       type: "fraction",
@@ -406,11 +411,65 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next6",
       prevEl: ".swiper-button-prev6",
     },
+    on: {
+      init: (swiper) => {
+        const { slides } = swiper;
+        if (slides && slides.length) {
+          sertificateSliderNavCountAnimate.find('.swiper-pagination-current').before(`<span class="swiper-pagination-current-custom">${createPaginateCount(slides.length)}</span>`);
+        }
+      },
+    },
+    breakpoints: {
+      768: {
+        allowTouchMove: false,
+      },
+    },
   });
+
+  sertificateSlider.on('slideChangeTransitionStart', (event) => {
+    sertificateRightContentsSection.addClass('is-disabled');
+
+    sertificateSliderNavCountAnimate.find('.swiper-pagination-current-custom .active').removeClass('active');
+    sertificateSliderNavCountAnimate.find('.swiper-pagination-current-custom span').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider.on('slideChangeTransitionEnd', () => {
+    sertificateRightContentsSection.removeClass('is-disabled');
+  });
+
+  sertificateSlider.on('slideNextTransitionStart', () => {
+    sertificateSliderBlockAnimation.addClass('is-animate-next');
+  });
+
+  sertificateSlider.on('slideNextTransitionEnd', (event) => {
+    sertificateSliderBlockAnimation.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+    sertificateSliderBlockAnimation.removeClass('is-animate-next');
+  });
+
+  sertificateSlider.on('slidePrevTransitionStart', (event) => {
+    sertificateSliderBlockAnimation.addClass('is-animate-prev');
+    sertificateRightContentsSection.addClass('is-animate-prev');
+    sertificateSliderBlockAnimation.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider.on('slidePrevTransitionEnd', () => {
+    sertificateSliderBlockAnimation.removeClass('is-animate-prev');
+    sertificateRightContentsSection.removeClass('is-animate-prev');
+  });
+
+
+
+  const sertificateSliderNavCountAnimate2 = $('.js-sertificateSliderNavCountAnimate-2');
+  const sertificateSliderBlockAnimation2 = $('.js-sertificateSliderBlockAnimation-2');
+  const sertificateRightContentsSection2 = $('.js-sertificateRightContentsSection-2');
 
   const sertificateSlider2 = new Swiper(".sertificateSlider2", {
     slidesPerView: 3,
     spaceBetween: 0,
+    allowTouchMove: true,
+    speed: 1100,
     pagination: {
       el: ".swiper-pagination7",
       type: "fraction",
@@ -419,12 +478,64 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next7",
       prevEl: ".swiper-button-prev7",
     },
+    on: {
+      init: (swiper) => {
+        const { slides } = swiper;
+        if (slides && slides.length) {
+          sertificateSliderNavCountAnimate2.find('.swiper-pagination-current').before(`<span class="swiper-pagination-current-custom">${createPaginateCount(slides.length)}</span>`);
+        }
+      },
+    },
+    breakpoints: {
+      768: {
+        allowTouchMove: false,
+      },
+    },
   });
 
+  sertificateSlider2.on('slideChangeTransitionStart', (event) => {
+    sertificateRightContentsSection2.addClass('is-disabled');
+
+    sertificateSliderNavCountAnimate2.find('.swiper-pagination-current-custom .active').removeClass('active');
+    sertificateSliderNavCountAnimate2.find('.swiper-pagination-current-custom span').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider2.on('slideChangeTransitionEnd', () => {
+    sertificateRightContentsSection2.removeClass('is-disabled');
+  });
+
+  sertificateSlider2.on('slideNextTransitionStart', () => {
+    sertificateSliderBlockAnimation2.addClass('is-animate-next');
+  });
+
+  sertificateSlider2.on('slideNextTransitionEnd', (event) => {
+    sertificateSliderBlockAnimation2.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation2.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+    sertificateSliderBlockAnimation2.removeClass('is-animate-next');
+  });
+
+  sertificateSlider2.on('slidePrevTransitionStart', (event) => {
+    sertificateSliderBlockAnimation2.addClass('is-animate-prev');
+    sertificateRightContentsSection2.addClass('is-animate-prev');
+    sertificateSliderBlockAnimation2.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation2.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider2.on('slidePrevTransitionEnd', () => {
+    sertificateSliderBlockAnimation2.removeClass('is-animate-prev');
+    sertificateRightContentsSection2.removeClass('is-animate-prev');
+  });
+
+
+  const sertificateSliderNavCountAnimate3 = $('.js-sertificateSliderNavCountAnimate-3');
+  const sertificateSliderBlockAnimation3 = $('.js-sertificateSliderBlockAnimation-3');
+  const sertificateRightContentsSection3 = $('.js-sertificateRightContentsSection-3');
 
   const sertificateSlider3 = new Swiper(".sertificateSlider3", {
     slidesPerView: 3,
     spaceBetween: 0,
+    allowTouchMove: true,
+    speed: 1100,
     pagination: {
       el: ".swiper-pagination8",
       type: "fraction",
@@ -433,11 +544,63 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next8",
       prevEl: ".swiper-button-prev8",
     },
+    on: {
+      init: (swiper) => {
+        const { slides } = swiper;
+        if (slides && slides.length) {
+          sertificateSliderNavCountAnimate3.find('.swiper-pagination-current').before(`<span class="swiper-pagination-current-custom">${createPaginateCount(slides.length)}</span>`);
+        }
+      },
+    },
+    breakpoints: {
+      768: {
+        allowTouchMove: false,
+      },
+    },
   });
+
+  sertificateSlider3.on('slideChangeTransitionStart', (event) => {
+    sertificateRightContentsSection3.addClass('is-disabled');
+
+    sertificateSliderNavCountAnimate3.find('.swiper-pagination-current-custom .active').removeClass('active');
+    sertificateSliderNavCountAnimate3.find('.swiper-pagination-current-custom span').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider3.on('slideChangeTransitionEnd', () => {
+    sertificateRightContentsSection3.removeClass('is-disabled');
+  });
+
+  sertificateSlider3.on('slideNextTransitionStart', () => {
+    sertificateSliderBlockAnimation3.addClass('is-animate-next');
+  });
+
+  sertificateSlider3.on('slideNextTransitionEnd', (event) => {
+    sertificateSliderBlockAnimation3.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation3.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+    sertificateSliderBlockAnimation3.removeClass('is-animate-next');
+  });
+
+  sertificateSlider3.on('slidePrevTransitionStart', (event) => {
+    sertificateSliderBlockAnimation3.addClass('is-animate-prev');
+    sertificateRightContentsSection3.addClass('is-animate-prev');
+    sertificateSliderBlockAnimation3.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation3.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider3.on('slidePrevTransitionEnd', () => {
+    sertificateSliderBlockAnimation3.removeClass('is-animate-prev');
+    sertificateRightContentsSection3.removeClass('is-animate-prev');
+  });
+
+  const sertificateSliderNavCountAnimate4 = $('.js-sertificateSliderNavCountAnimate-4');
+  const sertificateSliderBlockAnimation4 = $('.js-sertificateSliderBlockAnimation-4');
+  const sertificateRightContentsSection4 = $('.js-sertificateRightContentsSection-4');
 
   const sertificateSlider4 = new Swiper(".sertificateSlider4", {
     slidesPerView: 3,
     spaceBetween: 0,
+    allowTouchMove: true,
+    speed: 1100,
     pagination: {
       el: ".swiper-pagination9",
       type: "fraction",
@@ -446,6 +609,52 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next9",
       prevEl: ".swiper-button-prev9",
     },
+    on: {
+      init: (swiper) => {
+        const { slides } = swiper;
+        if (slides && slides.length) {
+          sertificateSliderNavCountAnimate4.find('.swiper-pagination-current').before(`<span class="swiper-pagination-current-custom">${createPaginateCount(slides.length)}</span>`);
+        }
+      },
+    },
+    breakpoints: {
+      768: {
+        allowTouchMove: false,
+      },
+    },
+  });
+
+  sertificateSlider4.on('slideChangeTransitionStart', (event) => {
+    sertificateRightContentsSection4.addClass('is-disabled');
+
+    sertificateSliderNavCountAnimate4.find('.swiper-pagination-current-custom .active').removeClass('active');
+    sertificateSliderNavCountAnimate4.find('.swiper-pagination-current-custom span').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider4.on('slideChangeTransitionEnd', () => {
+    sertificateRightContentsSection4.removeClass('is-disabled');
+  });
+
+  sertificateSlider4.on('slideNextTransitionStart', () => {
+    sertificateSliderBlockAnimation4.addClass('is-animate-next');
+  });
+
+  sertificateSlider4.on('slideNextTransitionEnd', (event) => {
+    sertificateSliderBlockAnimation4.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation4.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+    sertificateSliderBlockAnimation4.removeClass('is-animate-next');
+  });
+
+  sertificateSlider4.on('slidePrevTransitionStart', (event) => {
+    sertificateSliderBlockAnimation4.addClass('is-animate-prev');
+    sertificateRightContentsSection4.addClass('is-animate-prev');
+    sertificateSliderBlockAnimation4.find('.sertificateSliderBlockAnimationItem.active').removeClass('active');
+    sertificateSliderBlockAnimation4.find('.sertificateSliderBlockAnimationItem').eq(event.realIndex).addClass('active');
+  });
+
+  sertificateSlider4.on('slidePrevTransitionEnd', () => {
+    sertificateSliderBlockAnimation4.removeClass('is-animate-prev');
+    sertificateRightContentsSection4.removeClass('is-animate-prev');
   });
 
 

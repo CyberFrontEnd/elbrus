@@ -26,22 +26,20 @@
 }
 
 
-
 @keyframes fadeUpBlock {
   0% {
     opacity: 0;
-    top: 60px;
+    transform: translateY(60px);
   }
+
   100% {
     opacity: 1;
-    top: 0;
+    transform: translateY(0);
   }
 }
 
 .fadeUpBlockSec {
-  position: relative;
   opacity: 0;
-  top: 60px;
   animation: fadeUpBlock 1s ease forwards;
 }
 
