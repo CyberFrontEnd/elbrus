@@ -3104,8 +3104,33 @@ Start allCatalog
 }
 
 .navigationNav li a.next {
-  background: rgba(240, 240, 240, 1) url("../images/next.svg") no-repeat center;
+  background: rgba(240, 240, 240, 1);
   border: 1px solid rgba(78, 54, 57, 0);
+  position: relative;
+  left: 12px;
+}
+
+.navigationNav li a.prev:before,
+.navigationNav li a.next:before {
+  content: "";
+  display: block;
+  background: url("../images/next.svg") no-repeat center;
+  width: 20px;
+  height: 12px;
+}
+
+.navigationNav li a.prev {
+  border: 1px solid rgba(78, 54, 57, 0);
+  background-color: rgba(240, 240, 240, 1);
+  margin-right: 10px;
+}
+
+.navigationNav li a.prev:before {
+  transform: rotate(180deg);
+}
+
+.navigationNav li a.deactiv:before {
+  opacity: .6;
 }
 
 .allCatalogLeftTitle {
