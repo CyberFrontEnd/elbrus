@@ -439,7 +439,6 @@ Start catalog
   height: 230px;
 }
 
-.mySwiperContentRight source,
 .mySwiperContentRight img {
   height: 694px;
   object-fit: cover;
@@ -595,7 +594,6 @@ Start our
   position: relative;
 }
 
-.mySwiper2ContentRight source,
 .mySwiper2ContentRight img {
   width: 100%;
   object-fit: cover;
@@ -624,7 +622,7 @@ Start our
   overflow: hidden;
 }
 
-.mySwiper2ContentLeftList li source,
+
 .mySwiper2ContentLeftList li img {
   height: 302px;
   object-fit: cover;
@@ -793,7 +791,6 @@ Start new
   height: 310px;
 }
 
-.multiple-itemsNew a source,
 .multiple-itemsNew a img {
   margin: 0 auto;
   object-fit: cover;
@@ -1028,7 +1025,6 @@ Start description
   background-color: #555;
 }
 
-.productionsRightSlider source,
 .productionsRightSlider img,
 .productionsRightAnimation img {
   border-radius: 20px;
@@ -1084,7 +1080,6 @@ Start cooperation
   margin-top: -80px;
 }
 
-.cooperationIn picture source,
 .cooperationIn picture img {
   border-radius: 20px;
 }
@@ -1389,7 +1384,6 @@ Start news
   margin-top: 60px;
 }
 
-.newsSliderItem__img source,
 .newsSliderItem__img img {
   border-radius: 10px;
   height: 300px;
@@ -1531,7 +1525,6 @@ Start weForm
   min-height: 600px;
 }
 
-.weFormRight source,
 .weFormRight img {
   width: 100%;
   object-fit: cover;
@@ -2363,7 +2356,6 @@ Start titleSection
   width: 100%;
 }
 
-.titleSectionRight source,
 .titleSectionRight img {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -2584,6 +2576,13 @@ Start article
   background: #F0F0F0;
 }
 
+.articleAsideUs img {
+  border-radius: 100px;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+
 .articleAsideUsRight {
   max-width: 240px;
   width: 100%;
@@ -2640,7 +2639,6 @@ Start article
   margin-top: 10px;
 }
 
-.articleContentLeft picture source,
 .articleContentLeft picture img {
   border-radius: 10px;
 }
@@ -2701,7 +2699,6 @@ Start article
   justify-content: space-between;
 }
 
-.articleImg source,
 .articleImg img {
   border-radius: 15px;
   max-width: 450px;
@@ -2779,7 +2776,6 @@ Start article
   margin-bottom: 50px;
 }
 
-.articleSlider source,
 .articleSlider img {
   height: 480px;
   border-radius: 15px;
@@ -3343,7 +3339,6 @@ Start ourProduct
   padding-top: 160px;
 }
 
-.ourProductSlider source,
 .ourProductSlider img {
   object-fit: cover;
 }
@@ -3517,7 +3512,6 @@ Start blogMain
   height: 820px;
 }
 
-.blogContent2Center source,
 .blogContent2Center img {
   height: 100%;
   max-width: 100%;
@@ -4387,7 +4381,6 @@ Start career
   margin-left: 130px;
 }
 
-.career__img source,
 .career__img img {
   border-radius: 15px;
   max-width: 533px;
@@ -4706,7 +4699,6 @@ Start history
   width: 100%;
 }
 
-.historySliderRight source,
 .historySliderRight img {
   max-width: 600px;
   width: 100%;
@@ -4843,7 +4835,6 @@ Start sertificate
   width: 100%;
 }
 
-.sertificateLeft__img source,
 .sertificateLeft__img img {
   border-radius: 10px;
   max-width: 533px;
@@ -4889,7 +4880,6 @@ Start sertificate
   z-index: 9;
 }
 
-.sertificatePopUp source,
 .sertificatePopUp img {
   width: 480px;
   height: 678px;
@@ -5525,7 +5515,6 @@ End sertificate
   right: 10px;
 }
 
-.cooperationIn picture source,
 .cooperationIn picture img,
 .cooperationIn picture {
   max-width: 533px;
@@ -5539,7 +5528,6 @@ End sertificate
   border-radius: 20px;
 }
 
-.newsSliderItem__img source,
 .newsSliderItem__img img,
 .newsSliderItem__img {
   max-width: 388px;
@@ -6057,7 +6045,6 @@ Start responsive
     width: 100%;
   }
 
-  .newsSliderItem__img source,
   .newsSliderItem__img img {
     object-fit: cover;
   }
@@ -6109,7 +6096,6 @@ Start responsive
     max-width: 36%;
   }
 
-  .cooperationIn picture source,
   .cooperationIn picture img {
     max-width: 100%;
     width: 100%;
@@ -6283,7 +6269,6 @@ Start responsive
     margin-right: 2%;
   }
 
-  .aboutItem .ourProductSliderContent source,
   .aboutItem .ourProductSliderContent img {
     max-width: 100%;
     width: 100%;
@@ -6293,13 +6278,12 @@ Start responsive
     max-width: 40%;
   }
 
-  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
+  .aboutItem .ourProductSliderContent img {
     max-width: 98%;
   }
 }
 
 @media (max-width: 1460px) {
-  .sertificateLeft__img source,
   .sertificateLeft__img img {
     max-width: 100%;
     height: 500px;
@@ -6359,7 +6343,7 @@ Start responsive
     height: 560px;
   }
 
-  .mySwiperContentRight source, .mySwiperContentRight img,
+  .mySwiperContentRight img,
   .mySwiperContentLeft {
     height: 560px;
   }
@@ -6432,15 +6416,14 @@ Start responsive
     margin-bottom: 0;
   }
 
-  .cooperationIn picture source, .cooperationIn picture img, .cooperationIn picture {
+  .cooperationIn picture img, .cooperationIn picture {
     height: 500px;
   }
 
-  .newsSliderItem__img source, .newsSliderItem__img img, .newsSliderItem__img {
+  .newsSliderItem__img img, .newsSliderItem__img {
     height: 250px;
   }
 
-  .blogContent .newsSliderItem__img source,
   .blogContent .newsSliderItem__img img,
   .blogContent .newsSliderItem__img {
     height: 245px;
@@ -6462,7 +6445,7 @@ Start responsive
     margin-top: 0;
   }
 
-  .historySliderRight source, .historySliderRight img {
+  .historySliderRight img {
     max-width: 520px;
     height: 570px;
   }
@@ -6541,7 +6524,7 @@ Start responsive
     max-width: 78%;
   }
 
-  .articleImg source, .articleImg img {
+  .articleImg img {
     max-width: 100%;
   }
 
@@ -6610,7 +6593,6 @@ Start responsive
     max-width: 90%;
   }
 
-  .ourProductSlider source,
   .ourProductSlider img {
     height: auto;
   }
@@ -6775,7 +6757,6 @@ Start responsive
     max-width: 54%;
   }
 
-  .productionsRightSlider source,
   .productionsRightSlider img,
   .productionsRightAnimation img {
     height: 450px;
@@ -6800,7 +6781,6 @@ Start responsive
     height: 140px;
   }
 
-  .mySwiper2ContentLeftList li source,
   .mySwiper2ContentLeftList li img {
     height: 232px;
   }
@@ -6813,7 +6793,6 @@ Start responsive
     height: 475px;
   }
 
-  .newsSliderItem__img source,
   .newsSliderItem__img img {
     width: 100%;
   }
@@ -6933,7 +6912,7 @@ Start responsive
     height: 737px;
   }
 
-  .sertificateLeft__img source, .sertificateLeft__img img {
+  .sertificateLeft__img img {
     height: 100%;
   }
 
@@ -6978,7 +6957,6 @@ Start responsive
 }
 
 @media (max-width: 1150px) {
-  .sertificateLeft__img source,
   .sertificateLeft__img img {
     max-width: 100%;
     height: 450px;
@@ -7043,7 +7021,7 @@ Start responsive
 }
 
 @media (max-width: 1135px) {
-  .cooperationIn picture source, .cooperationIn picture img, .cooperationIn picture {
+  .cooperationIn picture img, .cooperationIn picture {
     height: 415px;
   }
 
@@ -7174,11 +7152,11 @@ Start responsive
     bottom: 160px;
   }
 
-  .articleImg source, .articleImg img {
+  .articleImg img {
     height: 350px;
   }
 
-  .articleSlider source, .articleSlider img {
+  .articleSlider img {
     height: 430px;
   }
 
@@ -7241,16 +7219,14 @@ Start responsive
     left: 22%;
   }
 
-  .career__img source, .career__img img {
+  .career__img img {
     height: 100%;
   }
 }
 
 @media (max-width: 1090px) {
-  .blogContentHorizont .newsSliderItem__img source,
   .blogContentHorizont .newsSliderItem__img img,
   .blogContentHorizont .newsSliderItem__img,
-  .blogContent2 .newsSliderItem__img source,
   .blogContent2 .newsSliderItem__img img,
   .blogContent2 .newsSliderItem__img {
     height: 200px;
@@ -7303,7 +7279,7 @@ Start responsive
     width: 100%;
   }
 
-  .aboutItem .ourProductSliderContent source, .aboutItem .ourProductSliderContent img {
+   .aboutItem .ourProductSliderContent img {
     max-width: 100%;
   }
 
@@ -7356,7 +7332,7 @@ Start responsive
     max-width: 60%;
   }
 
-  .articleImg source, .articleImg img {
+  .articleImg img {
     height: 280px;
   }
 
@@ -7404,7 +7380,6 @@ Start responsive
     margin: 0 1%;
   }
 
-  .mySwiper2ContentLeftList li source,
   .mySwiper2ContentLeftList li img {
     height: 199px;
   }
@@ -7516,10 +7491,8 @@ Start responsive
     font-size: 14px;
   }
 
-  .blogContentHorizont .newsSliderItem__img source,
   .blogContentHorizont .newsSliderItem__img img,
   .blogContentHorizont .newsSliderItem__img,
-  .blogContent2 .newsSliderItem__img source,
   .blogContent2 .newsSliderItem__img img,
   .blogContent2 .newsSliderItem__img {
     height: auto;
@@ -7559,7 +7532,7 @@ Start responsive
     max-width: 100%;
   }
 
-  .newsSliderItem__img source, .newsSliderItem__img img {
+  .newsSliderItem__img img {
     height: 250px;
   }
 
@@ -7650,7 +7623,7 @@ Start responsive
     font-size: 23px;
   }
 
-  .articleSlider source, .articleSlider img {
+  .articleSlider img {
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -7675,7 +7648,7 @@ Start responsive
   }
 
   .titleSectionLeft,
-  .titleSectionRight source, .titleSectionRight img {
+  .titleSectionRight img {
     border-radius: 0;
   }
 
@@ -7688,7 +7661,7 @@ Start responsive
     max-width: 45%;
   }
 
-  .productionsRightSlider source,
+
   .productionsRightSlider img,
   .productionsRightAnimation img {
     height: 415px;
@@ -7798,7 +7771,7 @@ Start responsive
     max-width: 48%;
   }
 
-  .blogContentHorizont .newsSliderItem__img source,
+
   .blogContentHorizont .newsSliderItem__img img {
     height: auto;
   }
@@ -7824,7 +7797,7 @@ Start responsive
     max-width: 48%;
   }
 
-  .blogContent2 .newsSliderItem__img source,
+
   .blogContent2 .newsSliderItem__img img {
     height: auto;
   }
@@ -7961,7 +7934,7 @@ Start responsive
     margin-top: 210px;
   }
 
-  .cooperationIn picture source, .cooperationIn picture img, .cooperationIn picture {
+  .cooperationIn picture img, .cooperationIn picture {
     height: auto;
   }
 
@@ -8022,7 +7995,6 @@ Start responsive
   }
 
   .conditerList,
-  .mySwiperContentRight source,
   .mySwiperContentRight img {
     display: none;
   }
@@ -8301,7 +8273,7 @@ Start responsive
     margin-top: 30px;
   }
 
-  .newsSliderItem__img source, .newsSliderItem__img img {
+   .newsSliderItem__img img {
     height: 300px;
   }
 
@@ -8542,7 +8514,7 @@ Start responsive
     margin-left: 0;
   }
 
-  .newsSliderItem__img source,
+
   .newsSliderItem__img img {
     height: 300px;
   }
@@ -8677,7 +8649,7 @@ Start responsive
     margin-right: 0 !important;
   }
 
-  .blogContent .newsSliderItem__img source,
+
   .blogContent .newsSliderItem__img img {
     height: 260px;
   }
@@ -8723,7 +8695,7 @@ Start responsive
     height: 100%;
   }
 
-  .titleSectionRight source, .titleSectionRight img {
+   .titleSectionRight img {
     width: 100%;
   }
 
@@ -8832,7 +8804,7 @@ Start responsive
     max-width: 100%;
   }
 
-  .mySwiper2ContentLeftList li source,
+
   .mySwiper2ContentLeftList li img {
     height: 300px;
   }
@@ -8946,7 +8918,7 @@ Start responsive
     max-width: 500px !important;
   }
 
-  .sertificatePopUp source, .sertificatePopUp img {
+   .sertificatePopUp img {
     width: 401px;
     height: 485px;
   }
@@ -9218,7 +9190,7 @@ Start responsive
     padding: 67px 0 !important;
   }
 
-  .sertificatePopUp source, .sertificatePopUp img {
+  .sertificatePopUp img {
     width: 300px;
     height: 385px;
   }
@@ -9379,7 +9351,7 @@ Start responsive
     font-size: 20px;
   }
 
-  .newsSliderItem__img source, .newsSliderItem__img img {
+   .newsSliderItem__img img {
     height: 235px;
   }
 
@@ -9624,11 +9596,11 @@ Start responsive
     max-width: 100%;
   }
 
-  .articleImg source, .articleImg img {
+   .articleImg img {
     height: auto;
   }
 
-  .articleSlider source, .articleSlider img {
+   .articleSlider img {
     height: 250px;
   }
 
@@ -9798,7 +9770,7 @@ Start responsive
     right: 0;
   }
 
-  .multiple-itemsNew a source,
+
   .multiple-itemsNew a img {
     height: 150px;
   }
@@ -9817,7 +9789,7 @@ Start responsive
     bottom: -20px;
   }
 
-  .mySwiper2ContentLeftList li source,
+
   .mySwiper2ContentLeftList li img {
     height: 250px;
   }
@@ -10346,7 +10318,7 @@ Start responsive
     left: 16%;
   }
 
-  .blogContent .newsSliderItem__img source,
+
   .blogContent .newsSliderItem__img img,
   .blogContent .newsSliderItem__img {
     height: auto;
@@ -10396,7 +10368,7 @@ Start responsive
     max-width: 100%;
   }
 
-  .blogContent .newsSliderItem__img source, .blogContent .newsSliderItem__img img {
+   .blogContent .newsSliderItem__img img {
     height: auto;
   }
 
