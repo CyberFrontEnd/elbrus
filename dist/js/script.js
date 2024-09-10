@@ -1,6 +1,15 @@
 $(document).ready(function () {
   new WOW().init();
 
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('.headerMain').addClass('fix');
+    } else {
+      $('.headerMain').removeClass('fix');
+    }
+  });
+
+
   $('#tab-container').easytabs({
     animationSpeed: 'fast',
     updateHash: false
@@ -41,6 +50,8 @@ $(document).ready(function () {
   // Start select
    $('.select').multipleSelect({});
 
+
+
   // Start multiple-itemsNew
   $('.multiple-itemsNew').slick({
     infinite: false,
@@ -49,12 +60,13 @@ $(document).ready(function () {
     slidesToScroll: 1,
   });
 
+  // Обработка события hover для переключения слайдов
   $('.multiple-itemsNew .slick-slide').hover(
-    function() {
-      $(this).closest('.multiple-itemsNew').slick('slickNext');
+    function () {
+      $(this).closest('.multiple-itemsNew').slick('slickNext');  // Переключаем на следующий слайд
     },
-    function() {
-      $(this).closest('.multiple-itemsNew').slick('slickPrev');
+    function () {
+      $(this).closest('.multiple-itemsNew').slick('slickPrev');  // Переключаем на предыдущий слайд
     }
   );
 
